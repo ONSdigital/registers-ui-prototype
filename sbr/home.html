@@ -1,0 +1,187 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html lang="en-gb" dir="ltr" class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en-gb" dir="ltr" class="no-js lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en-gb" dir="ltr" class="no-js lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]>         <html lang="en-gb" dir="ltr" class="no-js lt-ie10"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="en-gb" dir="ltr"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<title>Statistical Business Register prototype</title>
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<link rel="apple-touch-icon" sizes="180x180" href="../img/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="../img/favicons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="../img/favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="../img/favicons/manifest.json">
+  <link rel="mask-icon" href="../img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/semantic.css'>
+	<link rel="stylesheet" href="https://cdn.ons.gov.uk/sdc/8f80aaa/css/styles.css">
+	<link rel="stylesheet" href="../css/registers-main.css" media="all">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/industry-range.js"></script>
+	<script type="text/javascript">
+	</script>
+</head>
+
+<body>
+
+<!–– Primary header for home and landing pages ––>
+
+<section>
+
+<header class="page__header">
+
+	<div class="logo_container">
+		<div class="wrapper narrow">
+			<div class="group">
+				<div class="col-7">
+					<div class="logo_header">
+						<img src="../img/logo.svg" alt="Office for National Statistics" class="logo__img"/>
+					</div>
+				</div>
+				<div class="col-5">
+					<div class="header_links">
+						<ul class="menubar" role="menubar" id="appmenu">
+							<!-- <li role="menuitem"><a href="" class="username">Rhodri Griffith</a></li> -->
+							<li class="menubar" role="menuitem"><a href="index.html" class="username mars">Sign out</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="primary_header">
+		<div class="wrapper narrow">
+			<div class="group">
+				<div class="col-12">
+					<p class="jupiter top service_name">Statistical Business Register</p>
+					<p class="neptune service_description">A comprehensive list of UK businesses used by government for statistical purposes</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</header>
+
+</section>
+
+<!–– End of primary header ––>
+
+
+<div class="main-content">
+	<div class="wrapper narrow">
+		<div class="group u-mb-m">
+			<div class="col-8">
+				<h2 class="saturn">Search the UK business population</h2>
+			</div>
+		</div>
+
+
+	<div class="wrapper narrow">
+		<div class="group">
+			<div class="col-8">
+
+				<form class="form" action="search-results.html">
+
+					<div class="u-mb-m">
+						<label class="label neptune">Business name</label>
+						<input class="input input--text input-type__input search-input" type="text" id="text-input">
+					</div>
+
+					<div>
+						<label class="label neptune">Reference number</label>
+						<input class="input input--text input-type__input search-input" type="text" id="text-input">
+					</div>
+
+					<div class="guidance js-details u-mb-s" data-show-label="Show reference number search guidance" data-hide-label="Hide reference number search guidance">
+						<a class="guidance__link js-details-trigger js-details-label mars" aria-controls="guidance-answer" aria-expanded="false" id="guidance-trigger" data-guidance-trigger="true" href="#guidance-answer">Show reference number search guidance</a>
+							<div class="guidance__main js-details-body" id="guidance-answer-body" aria-hidden="true">
+								<div class="guidance__content new">
+									<table class="reference-number-guidance">
+										<caption class="mars">Reference number searches include:</caption>
+										<tr>
+											<th class="table-row-guidance" scope="row">Enterprise</th>
+											<td>Enterprise Enterprise Reference Number (ERN)</td>
+										</tr>
+										<tr>
+											<th class="table-row-guidance" scope="row">Local Unit</th>
+											<td>Local Unit Reference Number (LURN)</td>
+										</tr>
+										<tr>
+											<th class="table-row-guidance" scope="row">Reporting Unit</th>
+											<td>Reporting Unit Reference Number (RURN)</td>
+										</tr>
+										<tr>
+											<th class="table-row-guidance" scope="row">Legal Unit</th>
+											<td>Unique Business Reference Number (UBRN)</td>
+										</tr>
+										<tr>
+											<th class="table-row-guidance" scope="row">Admin Data</th>
+											<td>Company Reference Number (CRN) – Companies House</td>
+											<td>Value-Added Tax (VAT) number – HM Revenue & Customs</td>
+											<td>Pay As You Earn (PAYE) number – HM Revenue & Customs</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+					</div>
+
+					<div class="u-mb-l">
+						<label class="label neptune">Postcode</label>
+						<input class="input input--text input-type__input sbr-postcode-input" type="text" id="text-input">
+					</div>
+
+					<button class="btn btn--primary venus" type="submit">Search</button>
+
+				</form>
+
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+
+</section>
+
+<!–– Footer ––>
+
+<section>
+
+<footer class="page__footer">
+
+	<div class="wrapper narrow">
+		<div class="group">
+			<div class="col-12">
+				<div class="feedback">
+					<span class="pluto">This release is in development. Your <a href="mailto:Register@ons.gov.uk?Subject=User%20feedback"> feedback</a> will help us improve it.</span>
+				</div>
+			</div>
+		</div>
+		<div class="group">
+			<div class="col-12">
+				<ul class="footer__links">
+					<li>
+						<a href="" class="footer_link_item mars">Glossary of terms</a>
+						<a href="" class="footer_link_item mars">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+</footer>
+
+</section>
+
+<!–– End of footer ––>
+
+<script src="https://cdn.ons.gov.uk/sdc/8f80aaa/scripts/bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/semantic.min.js'></script>
+
+
+</body>
+</html>

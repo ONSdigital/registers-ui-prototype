@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en-gb" dir="ltr" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en-gb" dir="ltr" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en-gb" dir="ltr" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html dir="ltr" class="has-js" lang="en-gb">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<title>Registers and Sampling Service</title>
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="img/favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="img/favicons/manifest.json">
+  <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="stylesheet" href="https://cdn.ons.gov.uk/sdc/8f80aaa/css/styles.css">
+	<link rel="stylesheet" href="css/registers-main.css" media="all">
+</head>
+
+<body>
+
+<!–– Primary header for home and landing pages ––>
+
+<section>
+
+<header class="page__header">
+
+	<div class="logo_container">
+		<div class="wrapper narrow">
+			<div class="group">
+				<div class="col-7">
+					<div class="logo_header">
+						<a href="../registers-dashboard.html" class="logo"><img src="img/logo.svg" alt="Office for National Statistics" class="logo__img"/></a>
+					</div>
+				</div>
+				<div class="col-5">
+					<div class="header_links">
+						<ul class="menubar" role="menubar" id="appmenu">
+							<!-- <li role="menuitem"><a href="" class="username">Rhodri Griffith</a></li> -->
+							<li class="menubar" role="menuitem"><a href="index.html" class="username">Sign out</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="primary_header">
+		<div class="wrapper narrow">
+			<div class="group">
+				<div class="col-12">
+					<p class="jupiter top service_name">Registers and Sampling Service</p>
+					<p class="neptune service_description">A list of address and business data which provides sample frames for surveys</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</header>
+
+</section>
+
+<!–– End of primary header ––>
+
+
+<!–– Main content ––>
+
+<div class="main-content">
+	<div class="wrapper narrow">
+		<div class="group">
+
+			<section>
+				<div class="col-4">
+					<div class="service_tile_ai" id="tile">
+						<img src="img/ai-tile.svg" alt="Address Index image"/>
+						<div class="tile_text_area_ai">
+							<a href="ai/home.html" class="saturn tile_heading service_tile_link">Address Index</a>
+							<p class="pluto tile-text-top">The most accurate geographic dataset of addresses and properties in the UK</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="col-4">
+					<div class="service_tile_bi" id="tile">
+						<img src="img/sbr-tile.svg" alt="Business index image"/>
+						<div class="tile_text_area_bi">
+							<a href="bi/home.html" class="saturn tile_heading service_tile_link">Business Index</a>
+							<p class="pluto tile-text-top">A list of UK business for statistical use across government</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="col-4">
+					<div class="service_tile_sbr" id="tile">
+						<img src="img/sbr-tile.svg" alt="Statistical Business Register image"/>
+						<div class="tile_text_area_sbr">
+							<a href="sbr/home.html" class="saturn tile_heading service_tile_link">Statistical Business Register</a>
+							<p class="pluto tile-text-top">A comprehensive list of UK businesses used by government for statistical purposes</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</div>
+	</div>
+</div>
+
+<!–– End of main content ––>
+
+<!–– Footer ––>
+
+<section>
+
+<footer class="page__footer">
+
+	<div class="wrapper narrow">
+		<div class="group">
+			<div class="col-12">
+				<span class="pluto">This release is in development. Your <a href="mailto:Register@ons.gov.uk?Subject=User%20feedback"> feedback</a> will help us improve it.</span>
+			</div>
+		</div>
+	</div>
+
+</footer>
+
+</section>
+
+<!–– End of footer ––>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src='https://cdn.ons.gov.uk/sdc/0bceacd/scripts/bundle.min.js'></script>
+
+<script>
+$(".service_tile_ai").click(function(){
+     window.location=$(".tile_text_area_ai").find("a").attr("href");
+     return false;
+});
+$(".service_tile_bi").click(function(){
+     window.location=$(".tile_text_area_bi").find("a").attr("href");
+     return false;
+});
+$(".service_tile_sbr").click(function(){
+     window.location=$(".tile_text_area_sbr").find("a").attr("href");
+     return false;
+});
+</script>
+
+</body>
+</html>

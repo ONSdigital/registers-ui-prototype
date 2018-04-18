@@ -1,0 +1,443 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html lang="en-gb" dir="ltr" class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en-gb" dir="ltr" class="no-js lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en-gb" dir="ltr" class="no-js lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]>         <html lang="en-gb" dir="ltr" class="no-js lt-ie10"> <![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<title>Task 2</title>
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<link rel="apple-touch-icon" sizes="180x180" href="../img/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="../img/favicons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="../img/favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="../img/favicons/manifest.json">
+  <link rel="mask-icon" href="../img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/semantic.css'>
+	<link rel="stylesheet" href="https://cdn.ons.gov.uk/sdc/8f80aaa/css/styles.css">
+	<link rel="stylesheet" href="../css/registers-main.css" media="all">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/industry-range.js"></script>
+</head>
+
+<body>
+
+<!–– Primary header for home and landing pages ––>
+
+<section>
+
+<header class="page__header">
+
+		<div class="logo_container">
+			<div class="wrapper narrow">
+				<div class="group">
+					<div class="col-8">
+						<div class="logo_header">
+							<img src="../img/logo.svg" alt="Office for National Statistics" class="logo__img"/>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="header_links">
+							<ul class="menubar" role="menubar">
+								<li class="menubar" role="menuitem"><a href="#" class="username mars">Sign out</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="secondary_header">
+			<div class="wrapper narrow">
+				<div class="group">
+					<div class="col-12">
+						<h1 class="saturn top service_name">Address Index</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+
+</header>
+
+</section>
+
+<!–– End of secondary header ––>
+
+
+<!–– Start of edit search ––>
+
+<section>
+
+	<div class="search_bar">
+		<div class="wrapper narrow">
+			<div class="group">
+
+				<div class="col-6">
+					<div class="field u-mb-s">
+						<label class="label">Search for an address, postcode or UPRN</label>
+						<input class="input input--text input-type__input sbr-search-input" type="text" id="text-input" value="Carlisle Street Cardiff">
+					</div>
+				</div>
+
+				<div class="col-2">
+					<button class="btn btn--primary venus three-col-button" type="submit">Search</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+</section>
+
+<!–– End of edit search ––>
+
+
+
+<!–– Start of search results ––>
+
+<section>
+
+<!–– Start of results header ––>
+
+<div class="results-header">
+	<div class="wrapper narrow">
+		<div class="group">
+			<div class="col-6">
+    		<h2 class="collator-title neptune" id="title1">We've found 247 addresses</h2>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<!–– End of results header ––>
+
+
+
+
+
+
+<!–– Start of Keyline ––>
+
+<div class="wrapper narrow">
+	<div class="group">
+		<div class="col-12">
+
+			<div class="filter-container u-mb-l">
+
+				<div>
+					<p class="filter-results venus">Filter results:</p>
+				</div>
+
+				<div class="field--toggle float--left">
+					<label class="label label--inline venus field__label filter-label" for="showPasswordToggle One">Commercial</label>
+					<input id="showPasswordToggle One" class="field__input input input--checkbox" type="checkbox" onClick="Javascript:window.location.href = 'task-2-results-p2.html';"/>
+				</div>
+
+				<div class="field--toggle float--left">
+					<label class="label label--inline venus field__label filter-label" for="showPasswordToggle">Land</label>
+					<input id="showPasswordToggle" class="field__input input input--checkbox" type="checkbox" />
+				</div>
+
+				<div class="field--toggle float--left">
+					<label class="label label--inline venus field__label filter-label" for="showPasswordToggle Three">Military</label>
+					<input id="showPasswordToggle Three" class="field__input input input--checkbox" type="checkbox" />
+				</div>
+
+				<div class="field--toggle float--left">
+					<label class="label label--inline venus field__label filter-label" for="showPasswordToggle Four">Resedential</label>
+					<input id="showPasswordToggle Four" class="field__input input input--checkbox" type="checkbox" />
+				</div>
+
+				<div class="field--toggle float--left">
+					<label class="label label--inline venus field__label filter-label" for="showPasswordToggle Five">Object of interest</label>
+					<input id="showPasswordToggle Five" class="field__input input input--checkbox" type="checkbox" />
+				</div>
+
+				<div class="field--toggle float--left">
+					<label class="label label--inline venus field__label filter-label" for="showPasswordToggle Six">Other</label>
+					<input id="showPasswordToggle Six" class="field__input input input--checkbox" type="checkbox" />
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<!–– End of Keyline ––>
+
+<!–– Start of search results ––>
+
+	<div class="wrapper narrow">
+		<div class="group">
+			<div class="col-12">
+
+					<div class="search-item-container" id="enterprise">
+						<a href="#" class="saturn search-results-link">38A <em class="highlight">Carlisle Street</em>, Splott, <em class="highlight">Cardiff</em>, CF24 2DS</a>
+						<table class="mars ai-results-table">
+							<tr>
+								<th class="table-grey-text">UPRN</th>
+								<td>10013747984</td>
+							</tr>
+							<tr>
+								<th class="table-grey-text">Classification</th>
+								<td>Resedential <span style="padding-left: 10px; padding-right: 10px; color: #666666;">|</span> Dwelling <span style="padding-left: 10px; padding-right: 10px; color: #666666;">|</span> Self Contained Flat</td>
+							</tr>
+							<tr>
+								<th class="table-grey-text">Local Authority</th>
+								<td>Cardiff</td>
+							</tr>
+						</table>
+						<a href="#" class="mars location-icon">Location map</a>
+					</div>
+
+					<div class="search-item-container" id="enterprise">
+						<a href="#" class="saturn search-results-link">8 <em class="highlight">Carlisle Street</em>, Splott, <em class="highlight">Cardiff</em>, CF24 2DS</a>
+						<table class="mars ai-results-table">
+							<tr>
+								<th class="table-grey-text">UPRN</th>
+								<td>100100062734</td>
+							</tr>
+							<tr>
+								<th class="table-grey-text">Classification</th>
+								<td>Residential <span style="padding-left: 10px; padding-right: 10px; color: #666666;">|</span> Dwelling</td>
+							</tr>
+							<tr>
+								<th class="table-grey-text">Local Authority</th>
+								<td>Cardiff</td>
+							</tr>
+						</table>
+						<a href="#" class="mars location-icon">Location map</a>
+					</div>
+
+					<div class="search-item-container" id="enterprise">
+						<a href="#" class="saturn search-results-link">12 <em class="highlight">Carlisle Street</em>, Splott, <em class="highlight">Cardiff</em>, CF24 2DS</a>
+						<table class="mars ai-results-table">
+							<tr>
+								<th class="table-grey-text">UPRN</th>
+								<td>100100062737</td>
+							</tr>
+							<tr>
+								<th class="table-grey-text">Classification</th>
+								<td>Residential <span style="padding-left: 10px; padding-right: 10px; color: #666666;">|</span> Dwelling</td>
+							</tr>
+							<tr>
+								<th class="table-grey-text">Local Authority</th>
+								<td>Cardiff</td>
+							</tr>
+						</table>
+						<a href="#" class="mars location-icon">Location map</a>
+					</div>
+
+					<div class="search-item-container" id="enterprise">
+						<a href="#" class="saturn search-results-link">13 <em class="highlight">Carlisle Street</em>, Splott, <em class="highlight">Cardiff</em>, CF24 2DQ</a>
+						<table class="mars ai-results-table">
+							<tr>
+								<th class="table-grey-text">UPRN</th>
+								<td>100100062738</td>
+							</tr>
+							<tr>
+								<th class="table-grey-text">Classification</th>
+								<td>Residential <span style="padding-left: 10px; padding-right: 10px; color: #666666;">|</span> Dwelling</td>
+							</tr>
+							<tr>
+								<th class="table-grey-text">Local Authority</th>
+								<td>Cardiff</td>
+							</tr>
+						</table>
+						<a href="#" class="mars location-icon">Location map</a>
+					</div>
+
+					<div class="search-item-container" id="enterprise">
+						<a href="#" class="saturn search-results-link">26A <em class="highlight">Carlisle Street</em>, Splott, <em class="highlight">Cardiff</em>, CF24 2DS</a>
+						<table class="mars ai-results-table">
+							<tr>
+								<th class="table-grey-text">UPRN</th>
+								<td>100100062756</td>
+							</tr>
+							<tr>
+								<th class="table-grey-text">Classification</th>
+								<td>Residential <span style="padding-left: 10px; padding-right: 10px; color: #666666;">|</span> Dwelling <span style="padding-left: 10px; padding-right: 10px; color: #666666;">|</span> Self Contained Flat</td>
+							</tr>
+							<tr>
+								<th class="table-grey-text">Local Authority</th>
+								<td>Cardiff</td>
+							</tr>
+						</table>
+						<a href="#" class="mars location-icon">Location map</a>
+					</div>
+
+					<div class="search-item-container" id="enterprise">
+						<a href="#" class="saturn search-results-link">42 <em class="highlight">Carlisle Street</em>, Splott, <em class="highlight">Cardiff</em>, CF24 2DT</a>
+						<table class="mars ai-results-table">
+							<tr>
+								<th class="table-grey-text">UPRN</th>
+								<td>100100062769</td>
+							</tr>
+							<tr>
+								<th class="table-grey-text">Classification</th>
+								<td>Residential <span style="padding-left: 10px; padding-right: 10px; color: #666666;">|</span> Dwelling</td>
+							</tr>
+							<tr>
+								<th class="table-grey-text">Local Authority</th>
+								<td>Cardiff</td>
+							</tr>
+						</table>
+						<a href="#" class="mars location-icon">Location map</a>
+					</div>
+
+					<div class="search-item-container" id="enterprise">
+						<a href="#" class="saturn search-results-link">47A <em class="highlight">Carlisle Street</em>, Splott, <em class="highlight">Cardiff</em>, CF24 2DQ</a>
+						<table class="mars ai-results-table">
+							<tr>
+								<th class="table-grey-text">UPRN</th>
+								<td>100100062775</td>
+							</tr>
+							<tr>
+								<th class="table-grey-text">Classification</th>
+								<td>Residential <span style="padding-left: 10px; padding-right: 10px; color: #666666;">|</span> Dwelling</td>
+							</tr>
+							<tr>
+								<th class="table-grey-text">Local Authority</th>
+								<td>Cardiff</td>
+							</tr>
+						</table>
+						<a href="#" class="mars location-icon">Location map</a>
+					</div>
+
+					<div class="search-item-container" id="enterprise">
+						<a href="#" class="saturn search-results-link">50 <em class="highlight">Carlisle Street</em>, Splott, <em class="highlight">Cardiff</em>, CF24 2DT</a>
+						<table class="mars ai-results-table">
+							<tr>
+								<th class="table-grey-text">UPRN</th>
+								<td>100100062779</td>
+							</tr>
+							<tr>
+								<th class="table-grey-text">Classification</th>
+								<td>Residential <span style="padding-left: 10px; padding-right: 10px; color: #666666;">|</span> Dwelling</td>
+							</tr>
+							<tr>
+								<th class="table-grey-text">Local Authority</th>
+								<td>Cardiff</td>
+							</tr>
+						</table>
+						<a href="#" class="mars location-icon">Location map</a>
+					</div>
+
+					<div class="search-item-container" id="enterprise">
+						<a href="#" class="saturn search-results-link">64 <em class="highlight">Carlisle Street</em>, Splott, <em class="highlight">Cardiff</em>, CF24 2DT</a>
+						<table class="mars ai-results-table">
+							<tr>
+								<th class="table-grey-text">UPRN</th>
+								<td>100100062791</td>
+							</tr>
+							<tr>
+								<th class="table-grey-text">Classification</th>
+								<td>Residential <span style="padding-left: 10px; padding-right: 10px; color: #666666;">|</span> Dwelling</td>
+							</tr>
+							<tr>
+								<th class="table-grey-text">Local Authority</th>
+								<td>Cardiff</td>
+							</tr>
+						</table>
+						<a href="#" class="mars location-icon">Location map</a>
+					</div>
+
+					<div class="search-item-container" id="enterprise">
+						<a href="#" class="saturn search-results-link">65 <em class="highlight">Carlisle Street</em>, Splott, <em class="highlight">Cardiff</em>, CF24 2DR</a>
+						<table class="mars ai-results-table">
+							<tr>
+								<th class="table-grey-text">UPRN</th>
+								<td>100100062792</td>
+							</tr>
+							<tr>
+								<th class="table-grey-text">Classification</th>
+								<td>Residential <span style="padding-left: 10px; padding-right: 10px; color: #666666;">|</span> Dwelling</td>
+							</tr>
+							<tr>
+								<th class="table-grey-text">Local Authority</th>
+								<td>Cardiff</td>
+							</tr>
+						</table>
+						<a href="#" class="mars location-icon">Location map</a>
+					</div>
+
+			</div>
+		</div>
+	</div>
+
+<!–– End of search results ––>
+
+
+
+<!–– Start of pagination ––>
+
+<section>
+
+<div class="pagination-container">
+	<div class="wrapper narrow">
+		<div class="group">
+
+			<div class="col-12 u-mb-l">
+				<div class="pagination mars">
+				  <a href="#" class="pagination hide">Prev</a>
+				  <a class="active" href="#">1</a>
+				  <a href="#">2</a>
+				  <a href="#">Next</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+</section>
+
+<!–– End of pagination ––>
+
+
+<!–– Start of correction ––>
+
+<section>
+
+	<div class="correction">
+		<div class="wrapper narrow">
+			<div class="group">
+				<div class="col-12">
+					<a href="mailto:Register@ons.gov.uk?Subject=User%20feedback" class="username">Is there anything wrong with this page?</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</section>
+
+<!–– End of correction ––>
+
+
+
+<!–– Start of footer ––>
+
+<footer class="page__footer">
+
+	<div class="wrapper narrow">
+		<div class="group">
+			<div class="col-12">
+				<span class="pluto">This release is in development. Your <a href="mailto:Register@ons.gov.uk?Subject=User%20feedback"> feedback</a> will help us improve it.</span>
+			</div>
+		</div>
+	</div>
+
+</footer>
+
+<!–– End of footer ––>
+
+<script src="https://cdn.ons.gov.uk/sdc/8f80aaa/scripts/bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+
+</body>
+</html>
