@@ -1,0 +1,25 @@
+{
+  "name": "registers-ui-prototype",
+  "version": "0.0.1",
+  "private": false,
+  "license": "MIT",
+  "description": "A repository for style patterns for Registers user interfaces",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ONSdigital/registers-ui-prototype.git"
+  },
+  "dependencies": {
+    "csslint": "^1.0.5",
+    "html5-lint": "^0.3.0",
+    "mocha": "^5.1.1"
+  },
+  "scripts": {
+    "test": "npm run test:css; npm run test:html",
+    "test:css": "./node_modules/.bin/csslint ./css/registers-main.css",
+    "test:html": "mocha test/htmlTest.js"
+  },
+  "engines": {
+    "node": "6.11.5",
+    "npm": "3.10.10"
+  }
+}
