@@ -6,8 +6,9 @@ This repository includes the patterns that are used across Registers, on the [Bu
 
 ### Table of Contents
 **[1. Viewing the Prototypes](#viewing-the-prototypes)**<br>
-**[2. Contributing](#contributing)**<br>
-**[3. License](#license)**<br>
+**[2. Testing](#testing)**<br>
+**[3. Contributing](#contributing)**<br>
+**[4. License](#license)**<br>
 
 ## Viewing the Prototypes:
 
@@ -18,6 +19,17 @@ git clone https://github.com/ONSdigital/registers-ui-prototype.git
 ```
 
 Then open `registers-dashboard.html` in your browser.
+
+## Testing
+
+There are tests to check the validity of the CSS and HTML files.
+
+You can use the following commands to run the tests:
+
+```shell
+npm run test:css
+npm run test:html
+```
 
 ## Contributing
 
