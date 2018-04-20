@@ -13,7 +13,6 @@ Firstly, clone this repo:
 
 ```shell
 git clone https://github.com/ONSdigital/registers-ui-prototype.git
-npm install
 ```
 
 Then open `registers-dashboard.html` in your browser.
