@@ -1,5 +1,7 @@
 # registers-ui-prototype
 
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](./LICENSE)
+
 This repository includes the patterns that are used across Registers, on the [Business Index](https://github.com/ONSdigital/bi-ui), [Address Index](https://github.com/ONSdigital/address-index-api) and [Statistical Business Register](https://github.com/ONSdigital/sbr-ui).
 
 ### Table of Contents
