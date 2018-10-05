@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+.input--narrow {
+  	width: 10rem;
+}
+
+.input--checkbox {
+	left: 0;
+}
+
+.input--fullwidth {
+	width: 100%;
+}
+
+.input {
+	z-index: 0;
+}
+
+.tabinput .input {
+  position: relative;
+  width: 19.5rem;
+  z-index: 3;
+  padding: $input-padding;
+  display: block;
+  color: inherit;
+  font-size: 1rem;
+  border: 1px solid $color-borders;
+  border-radius: $input-radius;
+  transition: border-color 200ms ease-in;
+  @include mq(s) {
+    width: $input-width;
+  }
+
+  &:hover {
+    border-color: $color-links-hover;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px $color-focus-outline;
+    @include fixed() {
+      outline: 3px solid $color-focus-outline;
+    }
+  }
+}
+
+

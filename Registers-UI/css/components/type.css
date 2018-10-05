@@ -1,0 +1,15 @@
+.text__uppercase {
+  text-transform: uppercase;
+}
+
+.text--margin-xs {
+	margin-bottom: 0.25rem;
+}
+
+.text--margin-s {
+	margin-bottom: 0.5rem;
+}
+
+.text--margin-zero {
+	margin-bottom: 0;
+}

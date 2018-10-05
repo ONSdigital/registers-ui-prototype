@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+abbr[title], acronym[title] {
+	cursor: help !important; 
+	border-bottom: 2px dotted; 
+	text-decoration: none !important; 
+	}
+

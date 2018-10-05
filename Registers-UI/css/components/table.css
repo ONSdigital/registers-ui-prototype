@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+th,
+td {
+  padding: 1rem 0;
+  border-bottom: none;
+  line-height: 1.4;
+}
+
+tr.last
+{
+   border-bottom: none;
+}
+
+.table--cell {
+    padding: 0.75rem 0 0.75rem 1rem;
+}
+
+.table--cell-wide {
+    min-width: 500px;
+}
+
+
+/* sortable table styles from ljwatson https://ljwatson.github.io/sortable-tables/ */
+
+.sortable span[role="button"] {
+    display: inline-block;
+}
+
+.sortable span[role="button"] {
+    color: #4263C2;
+}
+
+.sortable span[role="button"]:hover {
+    cursor: pointer;
+}
+
+.sortable span[role="button"]:focus {
+  outline: none;
+}
+
+.sortable th {
+  white-space: nowrap;
+}
+
+.sortable th i {
+  padding-left: 2px;
+}
+
+.arrow:after {
+    background-image: url('../../img/arrow-sort.svg');
+    display: inline-block;
+    background-size: 16px 16px;
+    width: 16px;
+    height: 16px;
+    content:"";
+    margin-bottom: -2px;
+}
+
+.arrow-down:after {
+    background-image: url('../../img/arrow-down.svg');
+    display: inline-block;
+    background-size: 16px 16px;
+    width: 16px;
+    height: 16px;
+    content:"";
+    margin-bottom: -2px;
+}
+
+.arrow-up:after {
+    background-image: url('../../img/arrow-up.svg');
+    display: inline-block;
+    background-size: 16px 16px;
+    width: 16px;
+    height: 16px;
+    content:"";
+    margin-bottom: -2px;
+}

@@ -1,0 +1,32 @@
+.edit {
+  display: block;
+}
+
+.edit__block {
+  margin: 1.5rem 0 0 0;
+}
+
+.history {
+  display: block;
+}
+
+.history__block {
+  margin: 1.5rem 0 0 0;
+}
+
+.summary__block {
+  border-bottom: 1px solid #cccccc;
+}
+
+.summary__item--registers {
+  border-top: 1px solid #cccccc;
+}
+
+.summary__link--padding-adj {
+	padding-top: 0.75rem;
+}
+
+.summary__answer--registers {
+	font-weight: 700;
+	margin-bottom: 0.2rem;
+}
