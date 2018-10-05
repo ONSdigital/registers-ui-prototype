@@ -15,7 +15,6 @@
 	<link rel="manifest" href="../img/favicons/manifest.json">
   <link rel="mask-icon" href="../img/favicons/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="theme-color" content="#ffffff">
-	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/semantic.css'>
 	<link rel="stylesheet" href="https://cdn.ons.gov.uk/sdc/8f80aaa/css/styles.css">
 	<link rel="stylesheet" href="../css/registers-main.css" media="all">
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
@@ -24,61 +23,77 @@
 
 <body>
 
-	<!–– Secondary header ––>
+	<!–– Start of secondary header ––>
 
 	<section>
 
 	<header class="page__header">
 
-		<div class="logo_container">
-			<div class="wrapper narrow">
-				<div class="group">
-					<div class="col-8">
-						<div class="logo_header">
-							<img src="../img/logo.svg" alt="Office for National Statistics" class="logo__img"/>
+			<div class="logo_container">
+				<div class="wrapper narrow">
+					<div class="group">
+						<div class="col-8">
+							<div class="logo_header">
+								<img src="../img/logo.svg" alt="Office for National Statistics" class="logo__img"/>
+							</div>
+						</div>
+						<div class="col-4">
+							<div class="header_links">
+								<ul class="menubar" role="menubar">
+									<li class="menubar" role="menuitem"><a href="#" class="username mars">Sign out</a></li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
-	<div class="secondary_header">
-		<div class="wrapper narrow">
-			<div class="group">
-				<div class="col-12">
-					<h1 class="saturn top service_name">Statistical Business Register</h1>
+			<div class="secondary_header">
+				<div class="wrapper narrow">
+					<div class="group">
+						<div class="col-12">
+							<h1 class="saturn top service_name">Statistical Business Register</h1>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
-	</div>
 
-</header>
+	</header>
 
-<section>
+	</section>
 
-<!–– End of secondary header ––>
+	<!–– End of secondary header ––>
 
-<section>
+	<!–– Start of search bar ––>
+
+	<section>
 
 	<div class="search_bar">
 		<div class="wrapper narrow">
 			<div class="group">
 
-				<div class="col-6">
+				<div class="col-4">
 					<div class="field u-mb-s">
-						<label class="label">Business name or reference number</label>
-						<input class="input input--text input-type__input sbr-search-input" type="text" id="text-input">
+						<label class="label">Business name</label>
+						<input class="input input--text input-type__input search-input-fullwidth" type="text" id="text-input" value="Tesco">
 					</div>
 				</div>
 
-				<div class="col-3">
+				<div class="col-4">
+					<div class="field u-mb-s">
+						<label class="label">Reference number</label>
+						<input class="input input--text input-type__input search-input-fullwidth" type="text" id="text-input">
+					</div>
+				</div>
+
+				<div class="col-2">
 					<div class="field u-mb-s">
 						<label class="label">Postcode</label>
-						<input class="input input--text input-type__input sbr-search-input" type="text" id="text-input">
+						<input class="input input--text input-type__input search-input-fullwidth" type="text" id="text-input">
 					</div>
 				</div>
 
-				<div class="col-3">
+				<div class="col-2">
 					<button class="btn btn--primary venus three-col-button" type="submit">Search</button>
 				</div>
 
@@ -87,6 +102,9 @@
 	</div>
 
 </section>
+
+<!–– End of search bar ––>
+
 
 <section>
 
@@ -100,10 +118,10 @@
 							<span class="breadcrumb__chevron">&nbsp;&gt;&nbsp;</span>
 						</li>
 						<li class="breadcrumb__item">
-							<a href="enterprise.html" class="breadcrumb__link">Tesco Stores Ltd Inc Tesco Distribution</a>
+							<a href="enterprise.html" class="breadcrumb__link">Enterprise <strong>9900156115</strong></a>
 							<span class="breadcrumb__chevron">&nbsp;&gt;&nbsp;</span>
 						</li>
-						<li class="breadcrumb__item breadcrumb__item--current">Food and Wine Lovers Ltd</li>
+						<li class="breadcrumb__item breadcrumb__item--current">Legal Unit <strong>100004737443</strong></li>
 					</ul>
 				</nav>
 			</div>
@@ -118,11 +136,8 @@
 		<div class="wrapper narrow">
 			<div class="group">
 				<div class="col-12">
-
-					<h3 class="jupiter sml-margin">Food and Wine Lovers Ltd</h3>
-					<div class="badge badge--teal ent-reference">Legal Unit</div>
-					<div class="ent-reference u-mb-l">UBRN <strong>100004737443</strong>
-					</div>
+					<h3 class="jupiter xsml-margin uppercase">Food and Wine Lovers Ltd</h3>
+					<div class="mars u-mb-m">Legal Unit <strong>100004737443</strong></div>
 
 					<div class="panel panel--simple panel--info u-mb-l">
 							<table class="unit-info">
@@ -143,16 +158,14 @@
 							    <td class="venus">Active</td>
 							  </tr>
 								<tr>
-							    <th class="mars">Employment band</th>
-							    <td class="venus">–</td>
+							    <th class="mars">Employment</th>
+							    <td class="venus">0,000</td>
 							  </tr>
 								<tr>
-							    <th class="mars">Turnover band</th>
-							    <td class="venus">–</td>
+							    <th class="mars">Turnover</th>
+							    <td class="venus">£0.00 million</td>
 							  </tr>
 							</table>
-					<div>
-
 				</div>
 			</div>
 		</div>
@@ -163,86 +176,102 @@
 			<div class="group">
 				<div class="col-12">
 
-				<ul class="tabs clearfix u-mb-l" data-tabgroup="first-tab-group">
-				  <li><a href="#tab1" class="active">CRN (1)</a></li>
-				  <li><a href="#tab2">PAYE (2)</a></li>
-				  <li><a href="#tab3">VAT (0)</a></li>
-				</ul>
+					<h3 class="saturn">Admin Data information</h3>
 
-				<section id="first-tab-group" class="tabgroup u-mb-l">
+					<div class="tabset">
 
-					<div id="tab1">
-						<table class="unit-info">
-							<tr>
-								<th class="venus legal">CRN</th>
-								<td class="venus legal">Business Name</td>
-							</tr>
-							<tr>
-								<th class="mars legal">01028414</th>
-								<td class="mars legal"><a href="admin-unit.html" class="mars">Food and Wine Lovers Ltd</a></td>
-							</tr>
+					  <input type="radio" name="tabset" id="tab1" checked>
+					  <label for="tab1">CRN (1)</label>
 
-						</table>
-	  			</div>
+					  <input type="radio" name="tabset" id="tab2">
+					  <label for="tab2">PAYE (2)</label>
 
-				  <div id="tab2">
-						<table class="unit-info">
-							<tr>
-								<th class="venus legal">PAYE</th>
-								<td class="venus legal">Business Name</td>
-							</tr>
-							<tr>
-								<th class="mars legal">072J9465</th>
-								<td class="mars legal"><a href="#" class="mars">Cullen’s Stores Limited</a></td>
-							</tr>
-							<tr>
-								<th class="mars legal">045K7363</th>
-								<td class="mars legal"><a href="#" class="mars">London and Home Counties Superstores Limited</a></td>
-							</tr>
-						</table>
-				  </div>
+					  <input type="radio" name="tabset" id="tab3">
+					  <label for="tab3">VAT (0)</label>
 
-				  <div id="tab3">
-						<p class="mars">No VAT record</p>
-				  </div>
+					  <div class="tab-panels">
+					    <section id="tab1" class="tab-panel">
+								<div id="tab1">
+									<table class="sbr-table">
+										<tr>
+											<th class="venus legal sbr-table">CRN</th>
+											<td class="venus legal">Business Name</td>
+										</tr>
+										<tr>
+											<th class="mars legal">01028414</th>
+											<td class="mars legal"><a href="#" class="mars">Food and Wine Lovers Ltd</a></td>
+										</tr>
+									</table>
+				  			</div>
+					  	</section>
+					    <section id="rauchbier" class="tab-panel">
+								<div id="tab2">
+									<table class="unit-info">
+										<tr>
+											<th class="venus legal">PAYE</th>
+											<td class="venus legal">Business Name</td>
+										</tr>
+										<tr>
+											<th class="mars legal">072J9465</th>
+											<td class="mars legal"><a href="admin-unit.html" class="mars">Cullen’s Stores Limited</a></td>
+										</tr>
+										<tr>
+											<th class="mars legal">045K7363</th>
+											<td class="mars legal"><a href="#" class="mars">London and Home Counties Superstores Limited</a></td>
+										</tr>
+									</table>
+							  </div>
+					    </section>
 
-			</section>
+							<section id="dunkles" class="tab-panel">
+								<div id="tab3">
+									<p>No VAT record</p>
+							  </div>
+					    </section>
 
 
-
-
+					  </div>
 				</div>
 			</div>
 		</div>
 
 	</div>
 
-</section>
+<!–– Start of footer ––>
 
-
-
-
-
-
-
-
+<section>
 
 <footer class="page__footer">
 
 	<div class="wrapper narrow">
 		<div class="group">
 			<div class="col-12">
-				<span class="pluto">This release is in development. Your <a href="mailto:Register@ons.gov.uk?Subject=User%20feedback"> feedback</a> will help us improve it.</span>
+				<div class="feedback">
+					<span class="pluto">This release is in development. Your <a href="mailto:Register@ons.gov.uk?Subject=User%20feedback"> feedback</a> will help us improve it.</span>
+				</div>
+			</div>
+		</div>
+		<div class="group">
+			<div class="col-12">
+				<ul class="footer__links">
+					<li>
+						<a href="" class="footer_link_item mars">Glossary of terms</a>
+						<a href="" class="footer_link_item mars">Contact</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</div>
 
 </footer>
 
+</section>
+
+<!–– End of footer ––>
+
 		<script type="text/javascript" src="../js/index.js"></script>
 		<script src="https://cdn.ons.gov.uk/sdc/8f80aaa/scripts/bundle.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/semantic.min.js'></script>
 
 </body>
 </html>

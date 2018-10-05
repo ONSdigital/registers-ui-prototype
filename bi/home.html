@@ -35,7 +35,7 @@
 			<div class="group">
 				<div class="col-7">
 					<div class="logo_header">
-						<img src="../img/logo.svg" alt="Office for National Statistics" class="logo__img"/>
+						<a href="../registers-dashboard.html" class="logo"><img src="../img/logo.svg" alt="Office for National Statistics" class="logo__img"/></a>
 					</div>
 				</div>
 				<div class="col-5">
@@ -94,16 +94,16 @@
 					<form class="form" action="search-results.html">
 
 						<div class="u-mb-m">
-							<label class="label neptune">Business name</label>
+							<label class="label venus">Business name</label>
 							<input class="input input--text input-type__input search-input" type="text" id="text-input">
 						</div>
 
 						<div>
-							<legend class="label neptune">Reference number</legend>
+							<legend class="label venus">Reference number</legend>
 							<input class="input input--text input-type__input search-input" type="text" id="text-input">
 						</div>
 
-						<div class="guidance js-details u-mb-m" data-show-label="Show reference number search guidance" data-hide-label="Hide reference number search guidance">
+						<div class="guidance js-details u-mb-m search__guidance" data-show-label="Show reference number search guidance" data-hide-label="Hide reference number search guidance">
 							<a class="guidance__link js-details-trigger js-details-label mars" aria-controls="guidance-answer" aria-expanded="false" id="guidance-trigger" data-guidance-trigger="true" href="#guidance-answer">Show reference number search guidance</a>
 								<div class="guidance__main js-details-body" id="guidance-answer-body" aria-hidden="true">
 									<div class="guidance__content new">
@@ -125,12 +125,12 @@
 						</div>
 
 						<div class="u-mb-m">
-							<label class="label neptune">Postcode</label>
+							<label class="label venus">Postcode</label>
 							<input class="input input--text input-type__input bi-postcode-input" type="text" id="text-input">
 						</div>
 
 						<div class="u-mb-m">
-							<label class="label neptune">Industry classification (SIC)</label>
+							<label class="label venus">Industry classification (SIC)</label>
 								<div class="field--toggle">
 									<label class="label label--inline venus field__label" for="showPasswordToggle">Search range</label>
 									<input id="showPasswordToggle" class="field__input input input--checkbox" type="checkbox" />
@@ -145,7 +145,7 @@
 						</div>
 
 						<div class="field--select u-mb-m">
-	  					<label class="label neptune" for="select">Number of employees</label>
+	  					<label class="label venus" for="select">Number of employees</label>
 							<select name="skills" multiple="" class="ui fluid dropdown">
 								<option value="">Search all</option>
 								<option value="a">0</option>
@@ -167,7 +167,7 @@
 						</div>
 
 						<div class="field--select u-mb-m">
-							<label class="label neptune" for="select">Turnover</label>
+							<label class="label venus" for="select">Turnover</label>
 							<select name="skills" multiple="" class="ui fluid dropdown">
 									<option value="">Search all</option>
 									<option value="a">£0 – £99,000</option>
@@ -183,7 +183,7 @@
 						</div>
 
 						<div class="field--select u-mb-m">
-							<label class="label neptune" for="select">Trading status</label>
+							<label class="label venus" for="select">Trading status</label>
 							<select name="skills" multiple="" class="ui fluid dropdown">
 									<option value="">Search all</option>
 									<option value="a">Active</option>
@@ -194,7 +194,7 @@
 						</div>
 
 						<div class="field--select u-mb-l">
-							<label class="label neptune" for="select">Legal status</label>
+							<label class="label venus" for="select">Legal status</label>
 							<select name="skills" multiple="" class="ui fluid dropdown">
 									<option value="">Search all</option>
 									<option value="a">Company</option>

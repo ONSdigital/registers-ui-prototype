@@ -24,74 +24,89 @@
 
 <body>
 
-	<!–– Secondary header ––>
-
-	<section>
-
-	<header class="page__header">
-
-		<div class="logo_container">
-			<div class="wrapper narrow">
-				<div class="group">
-					<div class="col-8">
-						<div class="logo_header">
-							<img src="../img/logo.svg" alt="Office for National Statistics" class="logo__img"/>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-	<div class="secondary_header">
-		<div class="wrapper narrow">
-			<div class="group">
-				<div class="col-12">
-					<h1 class="saturn top service_name">Statistical Business Register</h1>
-				</div>
-			</div>
-		</div>
-	</div>
-
-</header>
+<!–– Secondary header ––>
 
 <section>
 
-<!–– End of secondary header ––>
+<header class="page__header">
 
-	<div class="search_bar">
-		<div class="wrapper narrow">
-			<div class="group">
-
-				<div class="col-4">
-					<div class="field u-mb-s">
-						<label class="label">Business name</label>
-						<input class="input input--text input-type__input search-input-fullwidth" type="text" id="text-input" value="Tesco">
-					</div>
+<div class="logo_container">
+	<div class="wrapper narrow">
+		<div class="group">
+			<div class="col-7">
+				<div class="logo_header">
+					<a href="../registers-dashboard.html" class="logo"><img src="../img/logo.svg" alt="Office for National Statistics" class="logo__img"/></a>
 				</div>
-
-				<div class="col-4">
-					<div class="field u-mb-s">
-						<label class="label">Reference number</label>
-						<input class="input input--text input-type__input search-input-fullwidth" type="text" id="text-input">
-					</div>
+			</div>
+			<div class="col-5">
+				<div class="header_links">
+					<ul class="menubar" role="menubar" id="appmenu">
+						<!-- <li role="menuitem"><a href="" class="username">Rhodri Griffith</a></li> -->
+						<li class="menubar" role="menuitem"><a href="index.html" class="username">Sign out</a></li>
+					</ul>
 				</div>
-
-				<div class="col-2">
-					<div class="field u-mb-s">
-						<label class="label">Posrcode</label>
-						<input class="input input--text input-type__input search-input-fullwidth" type="text" id="text-input">
-					</div>
-				</div>
-
-				<div class="col-2">
-					<button class="btn btn--primary venus three-col-button" type="submit">Search</button>
-				</div>
-
 			</div>
 		</div>
 	</div>
+</div>
+
+<div class="secondary_header">
+	<div class="wrapper narrow">
+		<div class="group">
+			<div class="col-12">
+				<h1 class="saturn top service_name">Statistical Business Register</h1>
+			</div>
+		</div>
+	</div>
+</div>
+
+</header>
 
 </section>
+
+<!–– End of secondary header ––>
+
+
+<!–– Start of Search bar ––>
+
+<section>
+
+<div class="search_bar">
+	<div class="wrapper narrow">
+		<div class="group">
+
+			<div class="col-4">
+				<div class="field u-mb-s">
+					<label class="label">Business name</label>
+					<input class="input input--text input-type__input search-input-fullwidth" type="text" id="text-input" value="Essential Enterprise">
+				</div>
+			</div>
+
+			<div class="col-4">
+				<div class="field u-mb-s">
+					<label class="label">Reference number</label>
+					<input class="input input--text input-type__input search-input-fullwidth" type="text" id="text-input">
+				</div>
+			</div>
+
+			<div class="col-2">
+				<div class="field u-mb-s">
+					<label class="label">Postcode</label>
+					<input class="input input--text input-type__input search-input-fullwidth" type="text" id="text-input">
+				</div>
+			</div>
+
+			<div class="col-2">
+				<button class="btn btn--primary venus three-col-button" type="submit">Search</button>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+</section>
+
+<!–– End of Search bar ––>
 
 <section>
 
@@ -99,36 +114,46 @@
 		<div class="wrapper narrow">
 			<div class="group">
 				<div class="col-12">
-					<p class="neptune">We've found 4,321 businesses</p>
+					<p class="neptune number-of-results">We've found <strong>4,321</strong> businesses</p>
 						<div class="filter-container u-mb-l">
 
-							<div>
-								<p class="filter-results venus">Filter results:</p>
-							</div>
+							<div class="guidance js-details" data-show-label="Show filter options" data-hide-label="Hide filter options">
+								<a class="guidance__link js-details-trigger js-details-label mars" aria-controls="guidance-answer" aria-expanded="false" id="guidance-trigger" data-guidance-trigger="true" href="#guidance-answer">Show filter options</a>
+									<div class="guidance__main js-details-body" id="guidance-answer-body" aria-hidden="true">
+										<div class="filter_options new">
 
-							<div class="field--toggle float--left">
-								<label class="label label--inline venus field__label filter-label" for="showPasswordToggle One">Enterprise</label>
-								<input id="showPasswordToggle One" class="field__input input input--checkbox" type="checkbox" />
-							</div>
+											<div class="field--toggle float--left">
+												<label class="label label--inline venus field__label filter-label" for="showPasswordToggle Zero">Enterprise Group</label>
+												<input id="showPasswordToggle Zero" class="field__input input input--checkbox input--checkbox--large" type="checkbox" />
+											</div>
 
-							<div class="field--toggle float--left">
-								<label class="label label--inline venus field__label filter-label" for="showPasswordToggle">Legal Unit</label>
-								<input id="showPasswordToggle" class="field__input input input--checkbox" type="checkbox" />
-							</div>
+											<div class="field--toggle float--left">
+												<label class="label label--inline venus field__label filter-label" for="showPasswordToggle One">Enterprise</label>
+												<input id="showPasswordToggle One" class="field__input input input--checkbox input--checkbox--large" type="checkbox" />
+											</div>
 
-							<div class="field--toggle float--left">
-								<label class="label label--inline venus field__label filter-label" for="showPasswordToggle Three">Local Unit</label>
-								<input id="showPasswordToggle Three" class="field__input input input--checkbox" type="checkbox" />
-							</div>
+											<div class="field--toggle float--left">
+												<label class="label label--inline venus field__label filter-label" for="showPasswordToggle">Legal Unit</label>
+												<input id="showPasswordToggle" class="field__input input input--checkbox input--checkbox--large" type="checkbox" />
+											</div>
 
-							<div class="field--toggle float--left">
-								<label class="label label--inline venus field__label filter-label" for="showPasswordToggle Four">Reporting Unit</label>
-								<input id="showPasswordToggle Four" class="field__input input input--checkbox" type="checkbox" />
-							</div>
+											<div class="field--toggle float--left">
+												<label class="label label--inline venus field__label filter-label" for="showPasswordToggle Three">Local Unit</label>
+												<input id="showPasswordToggle Three" class="field__input input input--checkbox input--checkbox--large" type="checkbox" />
+											</div>
 
-							<div class="field--toggle float--left">
-								<label class="label label--inline venus field__label filter-label" for="showPasswordToggle Five">Admin Data</label>
-								<input id="showPasswordToggle Five" class="field__input input input--checkbox" type="checkbox" />
+											<div class="field--toggle float--left">
+												<label class="label label--inline venus field__label filter-label" for="showPasswordToggle Four">Reporting Unit</label>
+												<input id="showPasswordToggle Four" class="field__input input input--checkbox input--checkbox--large" type="checkbox" />
+											</div>
+
+											<div class="field--toggle float--left">
+												<label class="label label--inline venus field__label filter-label" for="showPasswordToggle Five">Admin Data</label>
+												<input id="showPasswordToggle Five" class="field__input input input--checkbox input--checkbox--large" type="checkbox" />
+											</div>
+
+										</div>
+									</div>
 							</div>
 
 						</div>
@@ -136,7 +161,8 @@
 <!–– Start of search results ––>
 
 						<div class="search-item-container" id="enterprise">
-							<a href="enterprise.html" class="saturn search-results-link"><em class="highlight">Tesco</em> Stores Ltd Inc <em class="highlight">Tesco</em> Distribution</a><em class="badge badge--blue">Enterprise</em>
+							<a href="enterprise.html" class="saturn search-results-link"><em class="highlight">Essential Enterprise</em> Stores Ltd Inc Distribution</a>
+							<p class="classification venus"> Enterprise</p>
 							<table class="mars sbr-results">
   							<tr>
     							<th class="table-grey-text">ERN</th>
@@ -144,33 +170,18 @@
   							</tr>
   							<tr>
 							    <th class="table-grey-text">Address</th>
-							    <td>Enterprise House, 18 Delamare Road, Walton Cross, EN8 9SL</td>
+							    <td>Enterprise House, 190 Wilson Road, Walton Cross, EN12 9QR</td>
 							  </tr>
 								<tr>
-							    <th class="table-grey-text">Industry</th>
+							    <th class="table-grey-text">Industry (SIC)</th>
 							    <td>74990 – Other professional, scientific and technical activities</td>
-							  </tr>
-								<tr>
-									<th class="table-grey-text">Trading status</th>
-									<td>Active</td>
-								</tr>
-								<tr>
-							    <th class="table-grey-text">Legal status</th>
-							    <td>Company</td>
-							  </tr>
-								<tr>
-							    <th class="table-grey-text">Employees</th>
-							    <td>000,000</td>
-							  </tr>
-								<tr>
-							    <th class="table-grey-text">Turnover</th>
-							    <td>£000,000,000</td>
 							  </tr>
 							</table>
 						</div>
 
 						<div class="search-item-container" id="legal-unit-one">
-							<a href="#" class="saturn search-results-link"><em class="highlight">Tesco</em> Finance Ltd</a><em class="badge badge--teal">Legal unit</em>
+							<a href="#" class="saturn search-results-link"><em class="highlight">Essential Enterprise</em> Finance Ltd</a>
+							<p class="classification venus">Legal Unit</p>
 							<table class="mars sbr-results">
 								<tr>
 									<th class="table-grey-text">UBRN</th>
@@ -181,30 +192,15 @@
 									<td>123 Mini Street, Exeter, EX13 8DD</td>
 								</tr>
 								<tr>
-									<th class="table-grey-text">Industry</th>
+									<th class="table-grey-text">Industry (SIC)</th>
 									<td>64910 – Financial leasing</td>
-								</tr>
-								<tr>
-									<th class="table-grey-text">Trading status</th>
-									<td>Active</td>
-								</tr>
-								<tr>
-									<th class="table-grey-text">Legal status</th>
-									<td>Company</td>
-								</tr>
-								<tr>
-									<th class="table-grey-text">Employees</th>
-									<td>0,000</td>
-								</tr>
-								<tr>
-									<th class="table-grey-text">Turnover</th>
-									<td>£000,000,000</td>
 								</tr>
 							</table>
 						</div>
 
 						<div class="search-item-container" id="legal-unit-two">
-							<a href="#" class="saturn search-results-link"><em class="highlight">Tesco</em> Building Services</a><em class="badge badge--teal">Legal unit</em></h3>
+							<a href="#" class="saturn search-results-link"><em class="highlight">Essential Enterprise</em> Building Services</a>
+							<p class="classification venus">Legal Unit</p>
 							<table class="mars sbr-results">
 								<tr>
 									<th class="table-grey-text">UBRN</th>
@@ -215,60 +211,15 @@
 									<td>98 Chester Place, Liverpool, L1 0AB</td>
 								</tr>
 								<tr>
-									<th class="table-grey-text">Industry</th>
+									<th class="table-grey-text">Industry (SIC)</th>
 									<td>41201 – Building maintenance and restoration commercial buildings</td>
-								</tr>
-								<tr>
-									<th class="table-grey-text">Trading status</th>
-									<td>Active</td>
-								</tr>
-								<tr>
-									<th class="table-grey-text">Legal status</th>
-									<td>Company</td>
-								</tr>
-								<tr>
-									<th class="table-grey-text">Employees</th>
-									<td>000,000</td>
-								</tr>
-								<tr>
-									<th class="table-grey-text">Turnover</th>
-									<td>£00,000,000</td>
-								</tr>
-							</table>
-						</div>
-
-						<div class="search-item-container" id="local-unit-one">
-							<a href="#" class="saturn search-results-link">Newport Local <em class="highlight">Tesco</em></a><em class="badge badge--pink">Local unit</em></h3>
-							<table class="mars sbr-results">
-								<tr>
-									<th class="table-grey-text">UBRN</th>
-									<td>100004242036</td>
-								</tr>
-								<tr>
-									<th class="table-grey-text">Address</th>
-									<td>9 Newport Road, Newport, NP3 6EP</td>
-								</tr>
-								<tr>
-									<th class="table-grey-text">Industry</th>
-									<td>47110 – Supermarket (selling mainly foodstuffs) with alcohol licence (retail)</td>
-								</tr>
-								<tr>
-									<th class="table-grey-text">Trading status</th>
-									<td>Active</td>
-								</tr>
-								<tr>
-									<th class="table-grey-text">Legal status</th>
-									<td>Company</td>
-								</tr>
-								<tr>
-									<th class="table-grey-text">Employees</th>
-									<td>000</td>
 								</tr>
 							</table>
 						</div>
 
 						<div class="search-item-container" id="ch-unit-one">
-							<a href="#" class="saturn search-results-link"><em class="highlight">Tesco</em> Mobile Limited</a><em class="badge badge--mauve">Admin data</em></h3>
+							<a href="#" class="saturn search-results-link"><em class="highlight">Essential Enterprise</em> Mobile Limited</a>
+							<p class="classification venus">Admin Data<span style="padding-left: 10px; padding-right: 10px; color: #9B9B9B;">|</span>Companies House<span style="padding-left: 10px; padding-right: 10px; color: #9B9B9B;">|</span>CRN</p>
 							<table class="mars sbr-results">
 								<tr>
 									<th class="table-grey-text">CRN</th>
@@ -279,37 +230,149 @@
 									<td>9 Gower Court, Swansea, SA16 5AY</td>
 								</tr>
 								<tr>
-									<th class="table-grey-text">Industry</th>
+									<th class="table-grey-text">Industry (SIC)</th>
 									<td>46520 – Telecommunication instruments and apparatus</td>
-								</tr>
-								<tr>
-									<th class="table-grey-text">Trading status</th>
-									<td>Active</td>
-								</tr>
-								<tr>
-									<th class="table-grey-text">Legal status</th>
-									<td>Company</td>
-								</tr>
-								<tr>
-									<th class="table-grey-text">Employment band</th>
-									<td>20–24</td>
-								</tr>
-								<tr>
-									<th class="table-grey-text">Turnover band</th>
-									<td>£2m to £4.99m</td>
 								</tr>
 							</table>
 						</div>
 
+						<div class="search-item-container" id="ch-unit-two">
+							<a href="#" class="saturn search-results-link"><em class="highlight">Essential Enterprise</em> Mobile Limited</a>
+							<p class="classification venus">Admin Data<span style="padding-left: 10px; padding-right: 10px; color: #9B9B9B;">|</span>HM Revenue & Customs<span style="padding-left: 10px; padding-right: 10px; color: #9B9B9B;">|</span>VAT</p>
+							<table class="mars sbr-results">
+								<tr>
+									<th class="table-grey-text">VAT</th>
+									<td>98743757347</td>
+								</tr>
+								<tr>
+									<th class="table-grey-text">Address</th>
+									<td>9 Gower Court, Swansea, SA16 5AY</td>
+								</tr>
+								<tr>
+									<th class="table-grey-text">Industry (SIC)</th>
+									<td>46520 – Telecommunication instruments and apparatus</td>
+								</tr>
+							</table>
+						</div>
+
+						<div class="search-item-container" id="lu-unit-one">
+							<a href="#" class="saturn search-results-link">Newport <em class="highlight">Essential Enterprise</em></a>
+							<p class="classification venus">Local Unit</p>
+							<table class="mars sbr-results">
+								<tr>
+									<th class="table-grey-text">LURN</th>
+									<td>50093798564</td>
+								</tr>
+								<tr>
+									<th class="table-grey-text">Address</th>
+									<td>9 Newport Road, Newport, NP3 6EP</td>
+								</tr>
+								<tr>
+									<th class="table-grey-text">Industry (SIC)</th>
+									<td>47110 – Supermarket (selling mainly foodstuffs) with alcohol licence (retail)</td>
+								</tr>
+							</table>
+						</div>
+
+						<div class="search-item-container" id="lu-unit-two">
+							<a href="#" class="saturn search-results-link">Newport Malpas<em class="highlight">Essential Enterprise</em></a>
+							<p class="classification venus">Local Unit</p>
+							<table class="mars sbr-results">
+								<tr>
+									<th class="table-grey-text">LURN</th>
+									<td>50093675843</td>
+								</tr>
+								<tr>
+									<th class="table-grey-text">Address</th>
+									<td>67 Malpas Road, Newport, NP23 1EP</td>
+								</tr>
+								<tr>
+									<th class="table-grey-text">Industry (SIC)</th>
+									<td>47110 – Supermarket (selling mainly foodstuffs) with alcohol licence (retail)</td>
+								</tr>
+							</table>
+						</div>
+
+						<div class="search-item-container" id="lu-unit-three">
+							<a href="#" class="saturn search-results-link">Cardiff Bay <em class="highlight">Essential Enterprise</em></a>
+							<p class="classification venus">Local Unit</p>
+							<table class="mars sbr-results">
+								<tr>
+									<th class="table-grey-text">LURN</th>
+									<td>50033446566</td>
+								</tr>
+								<tr>
+									<th class="table-grey-text">Address</th>
+									<td>102 Cardiff Road, Cardiff, CF23 4RN</td>
+								</tr>
+								<tr>
+									<th class="table-grey-text">Industry (SIC)</th>
+									<td>47110 – Supermarket (selling mainly foodstuffs) with alcohol licence (retail)</td>
+								</tr>
+							</table>
+						</div>
+
+						<div class="search-item-container" id="lu-unit-four">
+							<a href="#" class="saturn search-results-link">Cardiff Canton <em class="highlight">Essential Enterprise</em></a>
+							<p class="classification venus">Local Unit</p>
+							<table class="mars sbr-results">
+								<tr>
+									<th class="table-grey-text">LURN</th>
+									<td>50093746456</td>
+								</tr>
+								<tr>
+									<th class="table-grey-text">Address</th>
+									<td>12 Canton Road, Cardiff, CF12 3RF</td>
+								</tr>
+								<tr>
+									<th class="table-grey-text">Industry (SIC)</th>
+									<td>47110 – Supermarket (selling mainly foodstuffs) with alcohol licence (retail)</td>
+								</tr>
+							</table>
+						</div>
+
+						<div class="search-item-container" id="lu-unit-five">
+							<a href="#" class="saturn search-results-link">Cardiff Thornhill <em class="highlight">Essential Enterprise</em> Metro</a>
+							<p class="classification venus">Local Unit</p>
+							<table class="mars sbr-results">
+								<tr>
+									<th class="table-grey-text">LURN</th>
+									<td>50098868773</td>
+								</tr>
+								<tr>
+									<th class="table-grey-text">Address</th>
+									<td>12 Canton Road, Cardiff, CF12 3RF</td>
+								</tr>
+								<tr>
+									<th class="table-grey-text">Industry (SIC)</th>
+									<td>47110 – Supermarket (selling mainly foodstuffs) with alcohol licence (retail)</td>
+								</tr>
+							</table>
+						</div>
+
+						<!–– Start of pagination ––>
+
+										<div class="pagination mars" id="pagination">
+										  <a href="#" class="pagination hide">Prev</a>
+										  <a class="active" href="#">1</a>
+										  <a href="#">2</a>
+										  <a href="#">3</a>
+										  <a href="#">4</a>
+										  <a href="#">5</a>
+										  <a href="#">Next</a>
+										</div>
+
+						<!–– End of pagination ––>
+
 				</div>
-
-
-
 			</div>
 		</div>
 	</div>
 
 </section>
+
+<!–– End of search results ––>
+
 
 <!–– Footer ––>
 

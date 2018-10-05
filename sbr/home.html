@@ -3,7 +3,7 @@
 <!--[if IE 7]>         <html lang="en-gb" dir="ltr" class="no-js lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html lang="en-gb" dir="ltr" class="no-js lt-ie10 lt-ie9"> <![endif]-->
 <!--[if IE 9]>         <html lang="en-gb" dir="ltr" class="no-js lt-ie10"> <![endif]-->
-<!--[if gt IE 9]><!--> <html lang="en-gb" dir="ltr"> <!--<![endif]-->
+<!--[if gt IE 9]><!--> <html lang="en-gb" dir="ltr" class="no-js"> <!--<![endif]-->
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -16,12 +16,18 @@
   <link rel="mask-icon" href="../img/favicons/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="theme-color" content="#ffffff">
 	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/semantic.css'>
-	<link rel="stylesheet" href="https://cdn.ons.gov.uk/sdc/8f80aaa/css/styles.css">
+	<link rel="stylesheet" href="https://cdn.ons.gov.uk/sdc/v1.5.0/css/responsive.css">
 	<link rel="stylesheet" href="../css/registers-main.css" media="all">
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script type="text/javascript" src="../js/industry-range.js"></script>
-	<script type="text/javascript">
-	</script>
+
+	<!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+      <script nonce="VjN3VmOCqMEPsqMo">document.documentElement.className = document.documentElement.className.replace('no-js','has-js')</script>
+    <!--<![endif]-->
+
 </head>
 
 <body>
@@ -37,7 +43,7 @@
 			<div class="group">
 				<div class="col-7">
 					<div class="logo_header">
-						<img src="../img/logo.svg" alt="Office for National Statistics" class="logo__img"/>
+						<a href="../registers-dashboard.html" class="logo"><img src="../img/logo.svg" alt="Office for National Statistics" class="logo__img"/></a>
 					</div>
 				</div>
 				<div class="col-5">
@@ -74,7 +80,7 @@
 	<div class="wrapper narrow">
 		<div class="group u-mb-m">
 			<div class="col-8">
-				<h2 class="saturn">Search the UK business population</h2>
+				<h1 class="saturn">Search the UK business population</h1>
 			</div>
 		</div>
 
@@ -86,24 +92,28 @@
 				<form class="form" action="search-results.html">
 
 					<div class="u-mb-m">
-						<label class="label neptune">Business name</label>
+						<label class="label venus">Business name</label>
 						<input class="input input--text input-type__input search-input" type="text" id="text-input">
 					</div>
 
 					<div>
-						<label class="label neptune">Reference number</label>
+						<label class="label venus">Reference number</label>
 						<input class="input input--text input-type__input search-input" type="text" id="text-input">
 					</div>
 
-					<div class="guidance js-details u-mb-s" data-show-label="Show reference number search guidance" data-hide-label="Hide reference number search guidance">
+					<div class="guidance js-details u-mb-s search__guidance" data-show-label="Show reference number search guidance" data-hide-label="Hide reference number search guidance">
 						<a class="guidance__link js-details-trigger js-details-label mars" aria-controls="guidance-answer" aria-expanded="false" id="guidance-trigger" data-guidance-trigger="true" href="#guidance-answer">Show reference number search guidance</a>
 							<div class="guidance__main js-details-body" id="guidance-answer-body" aria-hidden="true">
 								<div class="guidance__content new">
 									<table class="reference-number-guidance">
 										<caption class="mars">Reference number searches include:</caption>
 										<tr>
+											<th class="table-row-guidance" scope="row">Enterprise Group</th>
+											<td>Enterprise Group Reference Number (EGRN)</td>
+										</tr>
+										<tr>
 											<th class="table-row-guidance" scope="row">Enterprise</th>
-											<td>Enterprise Enterprise Reference Number (ERN)</td>
+											<td>Enterprise Reference Number (ERN)</td>
 										</tr>
 										<tr>
 											<th class="table-row-guidance" scope="row">Local Unit</th>
@@ -129,7 +139,7 @@
 					</div>
 
 					<div class="u-mb-l">
-						<label class="label neptune">Postcode</label>
+						<label class="label venus">Postcode</label>
 						<input class="input input--text input-type__input sbr-postcode-input" type="text" id="text-input">
 					</div>
 

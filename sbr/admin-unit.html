@@ -24,59 +24,77 @@
 
 <body>
 
-	<!–– Secondary header ––>
+	<!–– Start of secondary header ––>
 
 	<section>
 
 	<header class="page__header">
 
-		<div class="logo_container">
-			<div class="wrapper narrow">
-				<div class="group">
-					<div class="col-8">
-						<div class="logo_header">
-							<img src="../img/logo.svg" alt="Office for National Statistics" class="logo__img"/>
+			<div class="logo_container">
+				<div class="wrapper narrow">
+					<div class="group">
+						<div class="col-8">
+							<div class="logo_header">
+								<img src="../img/logo.svg" alt="Office for National Statistics" class="logo__img"/>
+							</div>
+						</div>
+						<div class="col-4">
+							<div class="header_links">
+								<ul class="menubar" role="menubar">
+									<li class="menubar" role="menuitem"><a href="#" class="username mars">Sign out</a></li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
-	<div class="secondary_header">
-		<div class="wrapper narrow">
-			<div class="group">
-				<div class="col-12">
-					<h1 class="saturn top service_name">Statistical Business Register</h1>
+			<div class="secondary_header">
+				<div class="wrapper narrow">
+					<div class="group">
+						<div class="col-12">
+							<h1 class="saturn top service_name">Statistical Business Register</h1>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
-	</div>
 
-</header>
+	</header>
 
-<section>
+	</section>
 
-<!–– End of secondary header ––>
+	<!–– End of secondary header ––>
+
+	<!–– Start of search bar ––>
+
+	<section>
 
 	<div class="search_bar">
 		<div class="wrapper narrow">
 			<div class="group">
 
-				<div class="col-6">
+				<div class="col-4">
 					<div class="field u-mb-s">
-						<label class="label">Business name or reference number</label>
-						<input class="input input--text input-type__input sbr-search-input" type="text" id="text-input">
+						<label class="label">Business name</label>
+						<input class="input input--text input-type__input search-input-fullwidth" type="text" id="text-input" value="Tesco">
 					</div>
 				</div>
 
-				<div class="col-3">
+				<div class="col-4">
+					<div class="field u-mb-s">
+						<label class="label">Reference number</label>
+						<input class="input input--text input-type__input search-input-fullwidth" type="text" id="text-input">
+					</div>
+				</div>
+
+				<div class="col-2">
 					<div class="field u-mb-s">
 						<label class="label">Postcode</label>
-						<input class="input input--text input-type__input sbr-search-input" type="text" id="text-input">
+						<input class="input input--text input-type__input search-input-fullwidth" type="text" id="text-input">
 					</div>
 				</div>
 
-				<div class="col-3">
+				<div class="col-2">
 					<button class="btn btn--primary venus three-col-button" type="submit">Search</button>
 				</div>
 
@@ -85,6 +103,9 @@
 	</div>
 
 </section>
+
+<!–– End of search bar ––>
+
 
 <section>
 
@@ -98,14 +119,14 @@
 							<span class="breadcrumb__chevron">&nbsp;&gt;&nbsp;</span>
 						</li>
 						<li class="breadcrumb__item">
-							<a href="enterprise.html" class="breadcrumb__link">Tesco Stores Ltd Inc Tesco Distribution</a>
+							<a href="enterprise.html" class="breadcrumb__link">Enterprise <strong>9900156115</strong></a>
 							<span class="breadcrumb__chevron">&nbsp;&gt;&nbsp;</span>
 						</li>
 						<li class="breadcrumb__item">
-							<a href="legal-unit.html" class="breadcrumb__link">Food and Wine Lovers Ltd</a>
+							<a href="legal-unit.html" class="breadcrumb__link">Legal Unit <strong>100004737443</strong></a>
 							<span class="breadcrumb__chevron">&nbsp;&gt;&nbsp;</span>
 						</li>
-						<li class="breadcrumb__item breadcrumb__item--current">CRN 01028414</li>
+						<li class="breadcrumb__item breadcrumb__item--current">Admin Data PAYE <strong>072J9465</strong></li>
 					</ul>
 				</nav>
 			</div>
@@ -118,38 +139,120 @@
 
 	<div class="main-content">
 		<div class="wrapper narrow">
-			<div class="group u-mb-xl">
-				<div class="col-12 u-mb-xl">
+			<div class="group">
+				<div class="col-12">
 
-					<h1 class="jupiter sml-margin">Food and Wine Lovers Ltd</h1>
-					<div class="badge badge--mauve ent-reference">Companies House</div>
-					<div class="ent-reference u-mb-l">CRN <strong>01028414</strong>
+					<h3 class="jupiter xsml-margin uppercase">Cullen Stores Limited</h3>
+					<div class="mars u-mb-m">Admin Data<span style="padding-left: 10px; padding-right: 10px; color: #9B9B9B;">|</span>HM Revenue & Customs<span style="padding-left: 10px; padding-right: 10px; color: #9B9B9B;">|</span>PAYE <strong>072J9465</strong></div>
+
+					<div class="panel panel--simple panel--info u-mb-l">
+							<table class="unit-info">
+								<tr>
+									<th class="mars">Address</th>
+									<td class="venus">123 Mini Street, Hatfield, AL7 1GA</td>
+								</tr>
+								<tr>
+									<th class="mars">Birth date</th>
+									<td class="venus">19/11/2007</td>
+								</tr>
+								<tr>
+									<th class="mars">Accounts reference</th>
+									<td class="venus">567PS00349584</td>
+								</tr>
+								<tr>
+									<th class="mars">Legal status</th>
+									<td class="venus">Company</td>
+								</tr>
+								<tr>
+									<th class="mars">Trading status</th>
+									<td class="venus">Active</td>
+								</tr>
+								<tr>
+									<th class="mars">Employment</th>
+									<td class="venus">0,000</td>
+								</tr>
+							</table>
 					</div>
-
-					<h2 class="saturn">Companies House record</h2>
-					<p class="mars">Admin data information</p>
 
 				</div>
 			</div>
 		</div>
-	</div>
 
+	<div class="wrapper narrow">
+		<div class="group u-mb-l">
+			<div class="col-6">
+				<h3 class="saturn">PAYE jobs</h3>
+				<!-- Start: @table--default -->
+    <table class="table">
+        <thead class="table--head">
+            <th scope="col" class="table--header--cell">Time period</th>
+            <th scope="col" class="table--header--cell">Number of jobs</th>
+        </thead>
+        <tbody>
+            <tr class="table--row">
+                <td class="table--cell">Q1 2018</td>
+                <td class="table--cell">261</td>
+            </tr>
+            <tr class="table--row">
+                <td class="table--cell">Q4 2017</td>
+                <td class="table--cell">297</td>
+            </tr>
+						<tr class="table--row">
+                <td class="table--cell">Q3 2017</td>
+                <td class="table--cell">281</td>
+            </tr>
+						<tr class="table--row">
+                <td class="table--cell">Q2 2017</td>
+                <td class="table--cell">278</td>
+            </tr>
+						<tr class="table--row">
+                <td class="table--cell">Q1 2017</td>
+                <td class="table--cell">290</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+			</div>
+
+		</div>
 	</div>
+</div>
 
 </section>
 
+
+<!–– Start of footer ––>
+
+<section>
 
 <footer class="page__footer">
 
 	<div class="wrapper narrow">
 		<div class="group">
 			<div class="col-12">
-				<span class="pluto">This release is in development. Your <a href="mailto:Register@ons.gov.uk?Subject=User%20feedback"> feedback</a> will help us improve it.</span>
+				<div class="feedback">
+					<span class="pluto">This release is in development. Your <a href="mailto:Register@ons.gov.uk?Subject=User%20feedback"> feedback</a> will help us improve it.</span>
+				</div>
+			</div>
+		</div>
+		<div class="group">
+			<div class="col-12">
+				<ul class="footer__links">
+					<li>
+						<a href="" class="footer_link_item mars">Glossary of terms</a>
+						<a href="" class="footer_link_item mars">Contact</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</div>
 
 </footer>
+
+</section>
+
+<!–– End of footer ––>
 
 		<script type="text/javascript" src="../js/index.js"></script>
 		<script src="https://cdn.ons.gov.uk/sdc/8f80aaa/scripts/bundle.min.js"></script>

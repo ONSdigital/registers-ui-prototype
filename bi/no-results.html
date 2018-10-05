@@ -35,7 +35,7 @@
 				<div class="group">
 					<div class="col-8">
 						<div class="logo_header">
-							<a href="../registers-dashboard.html" class="logo"><img src="../img/logo.svg" alt="Office for National Statistics" class="logo__img"/></a>
+							<img src="../img/logo.svg" alt="Office for National Statistics" class="logo__img"/>
 						</div>
 					</div>
 					<div class="col-4">
@@ -72,37 +72,33 @@
 
 	<div class="landscape-search">
 
-		<form>
-
 		<div class="wrapper">
 			<div class="group">
-				<div class="col-9">
-					<div class="field">
-						<label class="label input-margin">Business name</label>
-						<input class="input input--text input-type__input search-input-fullwidth" type="text" id="text-input">
-					</div>
-				</div>
-				<div class="col-3">
-					<div class="field">
-						<label class="label input-margin">Postcode</label>
-						<input class="input input--text input-type__input search-input-fullwidth" type="text" id="text-input">
-					</div>
+				<div class="col-12 minus-margin">
+					<p class="saturn">Edit search</p>
 				</div>
 			</div>
 		</div>
 
+		<form>
+
 		<div class="wrapper">
 			<div class="group">
 				<div class="col-6">
 					<div class="field">
-						<label class="label input-margin-sml">Reference number</label>
-						<label class="label__description">UBRN, CRN, VAT or PAYE</label>
-						<input class="input input--text input-type__input search-input-fullwidth" type="text" id="text-input">
+						<label class="label input-margin">Business name</label>
+						<input class="input input--text input-type__input bi-search-input-wide" type="text" id="text-input">
 					</div>
 				</div>
-				<div class="col-6">
+				<div class="col-2">
 					<div class="field">
-						<label class="label input-margin-sml">Industry classification (SIC)</label>
+						<label class="label input-margin">Postcode</label>
+						<input class="input input--text input-type__input bi-search-input-wide" type="text" id="text-input">
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="field">
+						<label class="label input-margin-sic">Industry classification (SIC)</label>
 							<div class="field--toggle sml">
 								<label class="label label--inline venus field__label" for="showPasswordToggle">Search range</label>
 								<input id="showPasswordToggle" class="field__input input input--checkbox" type="checkbox" />
@@ -114,6 +110,35 @@
 								<input class="input input--text input-type__input bi-sic-input-edit-landscape" type="text" id="text-input" value="From" onfocus="if (this.value=='From') this.value='';" onblur="if (this.value=='') this.value='From';">
 								<input class="input input--text input-type__input bi-sic-input-edit-landscape second" type="text" id="text-input" value="To" onfocus="if (this.value=='To') this.value='';" onblur="if (this.value=='') this.value='To';">
 							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="wrapper">
+			<div class="group">
+				<div class="col-3">
+					<div class="field">
+						<label class="label input-margin-sml">UBRN</label>
+						<input class="input input--text input-type__input bi-search-input-wide" type="text" id="text-input">
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="field">
+						<label class="label input-margin-sml">CRN</label>
+						<input class="input input--text input-type__input bi-search-input-wide" type="text" id="text-input">
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="field">
+						<label class="label input-margin-sml">VAT</label>
+						<input class="input input--text input-type__input bi-search-input-wide" type="text" id="text-input">
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="field">
+						<label class="label input-margin-sml">PAYE</label>
+						<input class="input input--text input-type__input bi-search-input-wide" type="text" id="text-input">
 					</div>
 				</div>
 			</div>
@@ -148,7 +173,7 @@
 
 				<div class="col-6">
 					<div class="field field--select">
-						<label class="label input-margin-sml" for="select">Turnover</label>
+						<label class="label input-margin-sml" for="select">Turnover band</label>
 						<select name="skills" multiple="" class="ui fluid dropdown edit">
 							<option value="">Search all</option>
 							<option value="a">£0 – £99,000</option>
@@ -228,12 +253,13 @@
 	<div class="wrapper">
 		<div class="group">
 			<div class="col-6">
-    		<h2 class="collator-title neptune" id="title1">We've found 8 businesses</h2>
+    		<h2 class="collator-title neptune" id="title1">No results were found</h2>
 			</div>
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 			<!–– Start of table/list toggle ––>
 
-			<div class="col-6 content-align-right">
+			<!-- <div class="col-6 content-align-right">
 
     		<div class="field__item js-focusable-box">
         	<input class="input input--radio js-focusable remove-margin" name="radio-answer" value="bacon" id="bacon" type="radio" onclick="showlist();" checked>
@@ -245,7 +271,7 @@
         	<label class="label label--inline venus bi-radio-label" for="olives">View as table</label>
         </div>
 
-			</div>
+			</div> -->
 
 			<!–– End of table/list toggle ––>
 
@@ -257,7 +283,7 @@
 
 
 <!–– Start of Keyline ––>
-
+<!--
 <div class="wrapper">
 	<div class="group">
 		<div class="col-12">
@@ -265,16 +291,31 @@
 			</div>
 		</div>
 	</div>
-</div>
+</div> -->
 
 <!–– End of Keyline ––>
+
+
+<!–– Start of capped results information panel ––>
+<!--
+<div class="wrapper">
+	<div class="group">
+		<div class="col-8">
+			<div class="panel panel--simple panel--info u-mb-l">
+				<p class="mars">Your results have been capped at <strong>10,000</strong> from a total of <strong>680,246</strong></p>
+			</div>
+		</div>
+	</div>
+</div> -->
+
+<!–– End of capped results information panel ––>
 
 
 
 <!–– Start of table ––>
 
-
-	<div class="wrapper">
+<!-- <div class="main-content"> -->
+	<!-- <div class="wrapper">
 		<div class="group">
 			<div class="col-12">
 
@@ -302,7 +343,7 @@
 									<span class="th-content">Turnover (£'000)<i class="arrow"></i></span>
 								</th>
 								<th scope="col" class="table--header--cell sortable-column" data-sortby="text">
-                  <span class="th-content trading-status">Trading status<i class="arrow"></i></span>
+                  <span class="th-content">Trading status<i class="arrow"></i></span>
                 </th>
                 <th scope="col" class="table--header--cell sortable-column" data-sortby="text">
                   <span class="th-content">Legal status<i class="arrow"></i></span>
@@ -402,14 +443,14 @@
             </tbody>
           </table>
 
-					</div>
+					</div> -->
 
 					<!–– End of table ––>
 
 
 					<!–– Start of list ––>
 
-					<div class="list-results" id="list-results">
+					<!-- <div class="list-results" id="list-results">
 
 					<div class="search-item-container">
 						<h3 class="saturn sml-margin uppercase"><em class="highlight">Essential Enterprise</em> Ltd</h3>
@@ -808,14 +849,14 @@
 					</div>
 
 				</div>
-			</div>
+			</div> -->
 
 				<!–– End of list display ––>
 
-			</div>
+			<!-- </div>
 		</div>
-	</div>
-
+	</div> -->
+<!-- </div> -->
 
 </section>
 
@@ -825,7 +866,7 @@
 
 <!–– Start of pagination ––>
 
-<section>
+<!-- <section>
 
 <div class="pagination-container">
 	<div class="wrapper">
@@ -847,7 +888,7 @@
 	</div>
 </div>
 
-</section>
+</section> -->
 
 <!–– End of pagination ––>
 
@@ -856,7 +897,7 @@
 
 <!–– Start of download results ––>
 
-<section>
+<!-- <section>
 
 <div class="download-results">
 	<div class="wrapper">
@@ -873,40 +914,24 @@
 	</div>
 </div>
 
-</section>
+</section> -->
 
 <!–– End of download results ––>
 
 
-<!–– Footer ––>
-
-<section>
+<!–– Start of footer ––>
 
 <footer class="page__footer">
 
 	<div class="wrapper">
 		<div class="group">
 			<div class="col-12">
-				<div class="feedback">
-					<span class="pluto">This release is in development. Your <a href="mailto:Register@ons.gov.uk?Subject=User%20feedback"> feedback</a> will help us improve it.</span>
-				</div>
-			</div>
-		</div>
-		<div class="group">
-			<div class="col-12">
-				<ul class="footer__links">
-					<li>
-						<a href="" class="footer_link_item mars">Help</a>
-						<a href="" class="footer_link_item mars">Contact</a>
-					</li>
-				</ul>
+				<span class="pluto">This release is in development. Your <a href="mailto:Register@ons.gov.uk?Subject=User%20feedback"> feedback</a> will help us improve it.</span>
 			</div>
 		</div>
 	</div>
 
 </footer>
-
-</section>
 
 <!–– End of footer ––>
 
