@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+.card {
+  display: inline-block;
+  width: 100%;
+  min-height: 400px;
+  margin: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+  background: #fff;
+  border: 1px solid #cccccc;
+
+  &:hover {
+    border: 1px solid #cccccc;
+  }
+}

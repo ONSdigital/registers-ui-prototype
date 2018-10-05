@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+.filter__item {
+  margin-bottom: -0.9rem;
+  position: relative;
+  width: auto;
+  display: block;
+}
+
+.field--filtering {
+  position: relative;
+  .field__input {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    &:focus {
+      box-shadow: 0 0 0 3px $color-focus-outline;
+    }
+  }
+  .field__label {
+    padding: 0 0 0 1.7em;
+  }
+}
+

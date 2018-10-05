@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+#card {
+  cursor: pointer;
+}
+
+#card:hover a {
+  color: #033E58;
+  text-decoration: none;
+}
+
+.card__text-area {
+  border: solid 1px #cccccc;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-top: none;
+  min-height: 200px;
+  padding: 1rem;
+}
+
+.card__link {
+  text-decoration: none;
+  line-height: 1.0;
+}
+
+.card--text-margin-top {
+  margin-top: 0.75rem;
+}
+

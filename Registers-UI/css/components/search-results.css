@@ -1,0 +1,16 @@
+.results {
+	margin: 2rem 0;
+}
+
+.classification {
+	padding: 0 1rem;
+	color: #9B9B9B;
+}
+
+.results__block {
+	margin-bottom: 1.5rem;
+}
+
+.results__block a {
+	text-decoration: none;
+}

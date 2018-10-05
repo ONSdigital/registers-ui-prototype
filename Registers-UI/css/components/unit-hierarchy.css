@@ -1,0 +1,41 @@
+.collapsible--padding {
+	padding-left: 3rem;
+}
+
+.status--margin-left {
+	margin-left: 0.5rem;
+	text-transform: capitalize;
+}
+
+.not--collapsible {
+	cursor: auto;
+	color: #222222;
+}
+
+.collapsible__title--no-reveal {
+  background: none;
+  margin: 0;
+  padding: 1em 0;
+  border: none;
+  border-top: 1px solid #999999;
+  display: block;
+  appearance: none;
+  width: 100%;
+  text-align: left;
+  line-height: 1;
+  overflow: hidden;
+  font-weight: 400;
+}
+
+.collapsible__title--no-reveal:hover {
+  color: #222222;
+}
+
+.collapsible__margin-bottom {
+	margin-bottom: 0.5rem;
+}
+
+.collapsible__border-top {
+	padding-top: 1rem;
+	border-top: 1px solid #999999;
+}

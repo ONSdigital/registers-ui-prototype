@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en-gb" dir="ltr" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en-gb" dir="ltr" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en-gb" dir="ltr" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html dir="ltr" class="has-js" lang="en-gb">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<title>Business Register</title>
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="img/favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="img/favicons/manifest.json">
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="stylesheet" href="https://cdn.ons.gov.uk/sdc/v1.6.0/css/responsive.css">
+	<link rel="stylesheet" href="css/registers-main.css" media="all">
+	<!--[if lt IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <script nonce="5lO8T0S8jHjwtrtd">document.documentElement.className = document.documentElement.className.replace('no-js','has-js')</script>
+  <!--<![endif]-->
+</head>
+
+<body>
+
+	<!–– Start of skip to content ––>
+	<div class="skip">
+	    <a class="skip__link" href="#main">Skip to content</a>
+	</div>
+    <!–– End of skip to content ––>
+
+
+	<!–– Start of internal header ––>
+	<header class="header header--internal">
+    <div class="header__top" role="banner">
+        <div class="container">
+            <div class="grid grid--gutterless">
+                <div class="grid__col col-6@s">
+                    <div class="logo">
+                        <img src="https://sdc-global-design-patterns.netlify.com/assets/img/ons-logo-black-en.svg" alt="Office for National Statistics logo" class="logo__img header__logo--print">
+                        <a href="#1">
+                            <img src="https://sdc-global-design-patterns.netlify.com/assets/img/ons-logo-white.svg" alt="Office for National Statistics logo" class="logo__img header__logo print__hidden">
+                        </a>
+                    </div>
+                </div>
+                <div class="grid__col col-6@s">
+                    <nav class="nav nav--horizontal nav--light u-d-no--@xs@s u-fr" aria-label="Site services menu">
+                        <ul class="nav__list" role="menubar" aria-label="Site services menu">
+                            <li class="nav__item" role="menuitem"><a href="#1" class="nav__link">My account</a></li>
+                            <li class="nav__item" role="menuitem"><a href="#1" class="nav__link">Help</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__main header__main--border">
+        <div class="container">
+            <div class="grid grid--gutterless grid--align-mid u-cf">
+                <div class="grid__col col-10@xs col-6@s col-8@m">
+                    <h1 class="header__title header__title--nav-adj">Business Register</h1>
+                </div>
+                <button class="btn btn--mobile js-nav-btn u-fr u-d-no--@s" type="button" id="menu-btn" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle main navigation" aria-haspopup="true"><span class="btn--mobile__label"></span></button>
+                <div class="u-fr u-d-no--@xs@s">
+                    <button class="btn btn--ghost print__hidden">Sign out</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__nav">
+        <div class="container">
+            <nav class="nav nav--horizontal nav--light nav--main nav--h-m js-main-nav" aria-label="Main menu" id="main-nav">
+                <ul class="nav__list" aria-label="Navigation menu" role="menubar">
+                    <li class="nav__item" role="menuitem" aria-current="page"><a href="home.html" class="nav__link">Home</a></li>
+                    <li class="nav__item nav__item--active" role="menuitem"><a href="search.html" class="nav__link">Search</a></li>
+					<li class="nav__item " role="menuitem"><a href="record-management.html" class="nav__link">Record management</a></li>
+                    <li class="nav__item nav__item--secondary u-d-no--@s" role="menuitem"><a href="#1" class="nav__link print__hidden">My account</a></li>
+                    <li class="nav__item  u-d-no--@s" role="menuitem"><a href="#1" class="nav__link print__hidden">Help</a></li>
+                    <li class="nav__item u-d-no--@s" role="menuitem"><button class="btn btn--ghost print__hidden">Save and sign out</button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+	</header>
+	<!–– End of internal header ––>
+
+
+    <!–– Start of global search ––>
+    <div class="global__search">
+        <div class="container">
+            <div class="grid">
+                <div class="grid__col col-5@m">
+                    <div class="field">
+                        <label class="label venus" for="text-input">Business name</label>
+                        <input class="input input--text input--fullwidth" type="text" id="text-input" value="Bolts and Ratchets"/>
+                    </div>
+                </div>
+                <div class="grid__col col-2@m">
+                    <div class="field">
+                        <label class="label venus" for="text-input">Postcode</label>
+                        <input class="input input--text input--fullwidth" type="text" id="text-input" />
+                    </div>
+                </div>
+                <div class="grid__col col-3@m">
+                    <div class="field">
+                        <label class="label venus" for="text-input">Reference number</label>
+                        <input class="input input--text input--fullwidth" type="text" id="text-input" />
+                    </div>
+                </div>
+                <div class="grid__col col-2@m">
+                    <div class="field">
+                        <button class="btn btn--custom">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!–– End of global search ––>
+
+
+    <!–– Start of content ––>
+    <div class="results">
+        <div class="container">
+            <div class="grid">
+                <div class="grid__col col-3@m">
+                    <p class="neptune">Filters</p>
+                        <fieldset>
+                            <legend class="field__legend mars">Unit classification</legend>
+                                <div class="field--filtering">
+                                    <div class="filter__item">
+                                        <input class="field__input input input--checkbox" name="checkbox-answer" value="enterpriseGroup" id="enterpriseGroup" type="checkbox">
+                                        <label class="label--inline label--inline venus field__label" for="enterpriseGroup">Enterprise Group</label>
+                                    </div>
+                                    <div class="filter__item">
+                                        <input class="field__input input input--checkbox" name="checkbox-answer" value="enterprise" id="enterprise" type="checkbox">
+                                        <label class="label--inline label--inline venus field__label" for="enterprise">Enterprise</label>
+                                    </div>
+                                    <div class="filter__item">
+                                        <input class="field__input input input--checkbox" name="checkbox-answer" value="legalUnit" id="legalUnit" type="checkbox">
+                                        <label class="label--inline label--inline venus field__label" for="legalUnit">Legal Unit</label>
+                                    </div>
+                                    <div class="filter__item">
+                                        <input class="field__input input input--checkbox" name="checkbox-answer" value="reportingUnit" id="reportingUnit" type="checkbox">
+                                        <label class="label--inline label--inline venus field__label" for="reportingUnit">Reporting Unit</label>
+                                    </div>
+                                    <div class="filter__item">
+                                        <input class="field__input input input--checkbox" name="checkbox-answer" value="localUnit" id="localUnit" type="checkbox">
+                                        <label class="label--inline label--inline venus field__label" for="localUnit">Local Unit</label>
+                                    </div>
+                                    <div class="filter__item">
+                                        <input class="field__input input input--checkbox" name="checkbox-answer" value="paye" id="paye" type="checkbox">
+                                        <label class="label--inline label--inline venus field__label" for="paye">PAYE</label>
+                                    </div>
+                                    <div class="filter__item">
+                                        <input class="field__input input input--checkbox" name="checkbox-answer" value="vat" id="vat" type="checkbox">
+                                        <label class="label--inline label--inline venus field__label" for="vat">VAT</label>
+                                    </div>
+                                    <div class="filter__item">
+                                        <input class="field__input input input--checkbox" name="checkbox-answer" value="companyNumber" id="companyNumber" type="checkbox">
+                                        <label class="label--inline label--inline venus field__label" for="companyNumber">Company Number</label>
+                                    </div>
+                                </div>
+                        </fieldset>
+                        <br>
+                        <fieldset>
+                            <legend class="field__legend mars">Status</legend>
+                                <div class="field--filtering">
+                                    <div class="filter__item">
+                                        <input class="field__input input input--checkbox" name="checkbox-answer" value="live" id="live" type="checkbox">
+                                        <label class="label--inline label--inline venus field__label" for="live">Live</label>
+                                    </div>
+                                    <div class="filter__item">
+                                        <input class="field__input input input--checkbox" name="checkbox-answer" value="dead" id="dead" type="checkbox">
+                                        <label class="label--inline label--inline venus field__label" for="dead">Dead</label>
+                                    </div>  
+                                </div>
+                        </fieldset>
+                </div>
+                
+                <div class="grid__col col-9@m">
+                    <main role="main" id="main" class="page__main">
+                        <h2 class="neptune">We've found 16 businesses</h2>
+                        <p>Displaying <strong>1-10</strong> of <strong>16</strong>
+                            <div class="results__block" id="enterpriseResult">
+                                <a href="enterprise.html" class="saturn text__uppercase"><em class="highlight">Bolts & Ratchets</em> Ltd</a>
+                                <p class="venus text--margin-xs">Enterprise</p>
+                                <dl class="metadata metadata__list grid grid--gutterless">
+                                    <dt class="metadata__term grid__col col-3@m venus">ERN:</dt>
+                                    <dd class="metadata__value grid__col col-9@m">9900156115</dd>
+                                    <dt class="metadata__term grid__col col-3@m venus">Trading as:</dt>
+                                    <dd class="metadata__value grid__col col-9@m text__uppercase"><em class="highlight mars">Bolts & Ratchets</em> Motor Repairs </dd>
+                                    <dt class="metadata__term grid__col col-3@m venus">Status:</dt>
+                                    <dd class="metadata__value grid__col col-9@m"><span class="status status--success">Live</span></dd>
+                                    <dt class="metadata__term grid__col col-3@m venus">Address:</dt>
+                                    <dd class="metadata__value grid__col col-9@m">Enterprise House, 34 Hillend Road, Walton Cross, EN8 9SL</dd>
+                                    <dt class="metadata__term grid__col col-3@m venus">Industry (SIC):</dt>
+                                    <dd class="metadata__value grid__col col-9@m">45200 – Maintenance and repair of motor vehicles</dd>
+                                </dl>
+                            </div>
+                            <div class="results__block" id="legalUnitResult">
+                                <a href="legal-unit.html" class="saturn text__uppercase"><em class="highlight">Bolts & Ratchets</em> Ltd</a>
+                                <p class="venus text--margin-xs">Legal Unit</p>
+                                <dl class="metadata metadata__list grid grid--gutterless">
+                                    <dt class="metadata__term grid__col col-3@m venus">UBRN:</dt>
+                                    <dd class="metadata__value grid__col col-9@m">1000006678793321</dd>
+                                    <dt class="metadata__term grid__col col-3@m venus">Trading as:</dt>
+                                    <dd class="metadata__value grid__col col-9@m text__uppercase"><em class="highlight mars">Bolts & Ratchets</em> Motor Repairs </dd>
+                                    <dt class="metadata__term grid__col col-3@m venus">Status:</dt>
+                                    <dd class="metadata__value grid__col col-9@m"><span class="status status--success">Live</span></dd>
+                                    <dt class="metadata__term grid__col col-3@m venus">Address:</dt>
+                                    <dd class="metadata__value grid__col col-9@m">Enterprise House, 34 Hillend Road, Walton Cross, EN8 9SL</dd>
+                                    <dt class="metadata__term grid__col col-3@m venus">Industry (SIC):</dt>
+                                    <dd class="metadata__value grid__col col-9@m">45200 – Maintenance and repair of motor vehicles</dd>
+                                </dl>
+                            </div>
+                            <div class="results__block" id="companyNumberResult">
+                                <a href="#" class="saturn text__uppercase"><em class="highlight">Bolts & Ratchets</em> Ltd</a>
+                                <p class="venus text--margin-xs">Admin Data<span class="classification">|</span>Companies House<span class="classification">|</span>Company Number</p>
+                                <dl class="metadata metadata__list grid grid--gutterless">
+                                    <dt class="metadata__term grid__col col-3@m venus">CN:</dt>
+                                    <dd class="metadata__value grid__col col-9@m">05888544</dd>
+                                    <dt class="metadata__term grid__col col-3@m venus">Trading as:</dt>
+                                    <dd class="metadata__value grid__col col-9@m text__uppercase"><em class="highlight mars">Bolts & Ratchets</em> Motor Repairs </dd>
+                                    <dt class="metadata__term grid__col col-3@m venus">Status:</dt>
+                                    <dd class="metadata__value grid__col col-9@m"><span class="status status--success">Live</span></dd>
+                                    <dt class="metadata__term grid__col col-3@m venus">Address:</dt>
+                                    <dd class="metadata__value grid__col col-9@m">Enterprise House, 34 Hillend Road, Walton Cross, EN8 9SL</dd>
+                                    <dt class="metadata__term grid__col col-3@m venus">Industry (SIC):</dt>
+                                    <dd class="metadata__value grid__col col-9@m">45200 – Maintenance and repair of motor vehicles</dd>
+                                </dl>
+                            </div>
+                            <div class="results__block" id="vatResult">
+                                <a href="#" class="saturn text__uppercase"><em class="highlight">Bolts & Ratchets</em> Ltd</a>
+                                <p class="venus text--margin-xs">Admin Data<span class="classification">|</span>HM Revenue & Customs<span class="classification">|</span>VAT</p>
+                                <dl class="metadata metadata__list grid grid--gutterless">
+                                    <dt class="metadata__term grid__col col-3@m venus">VAT:</dt>
+                                    <dd class="metadata__value grid__col col-9@m">678955493</dd>
+                                    <dt class="metadata__term grid__col col-3@m venus">Trading as:</dt>
+                                    <dd class="metadata__value grid__col col-9@m text__uppercase"><em class="highlight mars">Bolts & Ratchets</em> Motor Repairs </dd>
+                                    <dt class="metadata__term grid__col col-3@m venus">Status:</dt>
+                                    <dd class="metadata__value grid__col col-9@m"><span class="status status--success">Live</span></dd>
+                                    <dt class="metadata__term grid__col col-3@m venus">Address:</dt>
+                                    <dd class="metadata__value grid__col col-9@m">Enterprise House, 34 Hillend Road, Walton Cross, EN8 9SL</dd>
+                                    <dt class="metadata__term grid__col col-3@m venus">Industry (SIC):</dt>
+                                    <dd class="metadata__value grid__col col-9@m">45200 – Maintenance and repair of motor vehicles</dd>
+                                </dl>
+                            </div>
+                            <div class="results__block" id="payeResult">
+                                <a href="#" class="saturn text__uppercase"><em class="highlight">Bolts & Ratchets</em> Ltd</a>
+                                <p class="venus text--margin-xs">Admin Data<span class="classification">|</span>HM Revenue & Customs<span class="classification">|</span>PAYE</p>
+                                <dl class="metadata metadata__list grid grid--gutterless">
+                                    <dt class="metadata__term grid__col col-3@m venus">PAYE:</dt>
+                                    <dd class="metadata__value grid__col col-9@m">135AB56789</dd>
+                                    <dt class="metadata__term grid__col col-3@m venus">Trading as:</dt>
+                                    <dd class="metadata__value grid__col col-9@m text__uppercase"><em class="highlight mars">Bolts & Ratchets</em> Motor Repairs </dd>
+                                    <dt class="metadata__term grid__col col-3@m venus">Status:</dt>
+                                    <dd class="metadata__value grid__col col-9@m"><span class="status status--success">Live</span></dd>
+                                    <dt class="metadata__term grid__col col-3@m venus">Address:</dt>
+                                    <dd class="metadata__value grid__col col-9@m">Enterprise House, 34 Hillend Road, Walton Cross, EN8 9SL</dd>
+                                    <dt class="metadata__term grid__col col-3@m venus">Industry (SIC):</dt>
+                                    <dd class="metadata__value grid__col col-9@m">45200 – Maintenance and repair of motor vehicles</dd>
+                                </dl>
+                            </div>
+                            <div class="results__block" id="enterpriseGroupResult">
+                                <a href="enterprise-group.html" class="saturn text__uppercase"><em class="highlight">Bolts & Ratchets</em> Plc</a>
+                                <p class="venus text--margin-xs">Enterprise Group</p>
+                                <dl class="metadata metadata__list grid grid--gutterless">
+                                    <dt class="metadata__term grid__col col-3@m venus">EGRN:</dt>
+                                    <dd class="metadata__value grid__col col-9@m">220015767</dd>
+                                    <dt class="metadata__term grid__col col-3@m venus">Status:</dt>
+                                    <dd class="metadata__value grid__col col-9@m"><span class="status status--success">Live</span></dd>
+                                    <dt class="metadata__term grid__col col-3@m venus">Address:</dt>
+                                    <dd class="metadata__value grid__col col-9@m">3 Sloper Road , Bristol, BS1 1DB</dd>
+                                    <dt class="metadata__term grid__col col-3@m venus">Industry (SIC):</dt>
+                                    <dd class="metadata__value grid__col col-9@m">45200 – Maintenance and repair of motor vehicles</dd>
+                                </dl>
+                            </div>
+                            <div class="results__block" id="localUnitResult">
+                                <a href="#" class="saturn text__uppercase"><em class="highlight">Bolts & Ratchets</em> Cardiff</a>
+                                <p class="venus text--margin-xs">Local Unit</p>
+                                <dl class="metadata metadata__list grid grid--gutterless">
+                                    <dt class="metadata__term grid__col col-3@m venus">LURN:</dt>
+                                    <dd class="metadata__value grid__col col-9@m">50991234C</dd>
+                                    <dt class="metadata__term grid__col col-3@m venus">Status:</dt>
+                                    <dd class="metadata__value grid__col col-9@m"><span class="status status--success">Live</span></dd>
+                                    <dt class="metadata__term grid__col col-3@m venus">Address:</dt>
+                                    <dd class="metadata__value grid__col col-9@m">123 Mini Street, Cardiff, CF23 2BZ</dd>
+                                    <dt class="metadata__term grid__col col-3@m venus">Industry (SIC):</dt>
+                                    <dd class="metadata__value grid__col col-9@m">45200 – Maintenance and repair of motor vehicles</dd>
+                                </dl>
+                            </div>
+                            <div class="results__block" id="localUnitResult">
+                                <a href="#" class="saturn text__uppercase"><em class="highlight">Bolts & Ratchets</em> Swansea</a>
+                                <p class="venus text--margin-xs">Local Unit</p>
+                                <dl class="metadata metadata__list grid grid--gutterless">
+                                    <dt class="metadata__term grid__col col-3@m venus">LURN:</dt>
+                                    <dd class="metadata__value grid__col col-9@m">50444532C</dd>
+                                    <dt class="metadata__term grid__col col-3@m venus">Status:</dt>
+                                    <dd class="metadata__value grid__col col-9@m"><span class="status status--success">Live</span></dd>
+                                    <dt class="metadata__term grid__col col-3@m venus">Address:</dt>
+                                    <dd class="metadata__value grid__col col-9@m">Unit 44B, Mumbles Industrial Estate, Swansea, SA14 1NB</dd>
+                                    <dt class="metadata__term grid__col col-3@m venus">Industry (SIC):</dt>
+                                    <dd class="metadata__value grid__col col-9@m">45200 – Maintenance and repair of motor vehicles</dd>
+                                </dl>
+                            </div>
+                            <div class="results__block" id="reportingUnitResult">
+                                <a href="reporting-unit.html" class="saturn text__uppercase"><em class="highlight">Bolts & Ratchets</em> Wales</a>
+                                <p class="venus text--margin-xs">Reporting Unit</p>
+                                <dl class="metadata metadata__list grid grid--gutterless">
+                                    <dt class="metadata__term grid__col col-3@m venus">RURN:</dt>
+                                    <dd class="metadata__value grid__col col-9@m">499986239</dd>
+                                    <dt class="metadata__term grid__col col-3@m venus">Status:</dt>
+                                    <dd class="metadata__value grid__col col-9@m"><span class="status status--success">Live</span></dd>
+                                    <dt class="metadata__term grid__col col-3@m venus">Address:</dt>
+                                    <dd class="metadata__value grid__col col-9@m">18 Ty Wern Road, Cardiff, CF14 2ER</dd>
+                                    <dt class="metadata__term grid__col col-3@m venus">Industry (SIC):</dt>
+                                    <dd class="metadata__value grid__col col-9@m">45200 – Maintenance and repair of motor vehicles</dd>
+                                </dl>
+                            </div>
+                            <div class="results__block" id="legalUnitResult">
+                                <a href="#" class="saturn text__uppercase">Happy Finance Company</a>
+                                <p class="venus text--margin-xs">Legal Unit</p>
+                                <dl class="metadata metadata__list grid grid--gutterless">
+                                    <dt class="metadata__term grid__col col-3@m venus">UBRN:</dt>
+                                    <dd class="metadata__value grid__col col-9@m">1000047374437765</dd>
+                                    <dt class="metadata__term grid__col col-3@m venus">Trading as:</dt>
+                                    <dd class="metadata__value grid__col col-9@m text__uppercase"><em class="highlight mars">Bolts and Ratchets</em> Money</dd>
+                                    <dt class="metadata__term grid__col col-3@m venus">Status:</dt>
+                                    <dd class="metadata__value grid__col col-9@m"><span class="status status--success">Live</span></dd>
+                                    <dt class="metadata__term grid__col col-3@m venus">Address:</dt>
+                                    <dd class="metadata__value grid__col col-9@m">11 Wilson Street, Exeter, EX13 8DD</dd>
+                                    <dt class="metadata__term grid__col col-3@m venus">Industry (SIC):</dt>
+                                    <dd class="metadata__value grid__col col-9@m">64910 – Financial leasing</dd>
+                                </dl>
+                            </div>
+                            <div class="pagination">
+                                <nav class="pagination u-mb-l" role="navigation" aria-label="Pagination (Page 1 of 35)">
+                                    <div class="mars pagination__position">Page 1 of 2</div>
+                                    <ul class="pagination__items">
+                                        <li class="pagination__item pagination__item--active pagination__item--current"><a href="javascript:;" class="pagination__link" aria-label="Current page (1 of 35)" aria-current="true">1</a></li>
+                                        <li class="pagination__item"><a href="search-results-p2.html" class="pagination__link" rel="next" aria-label="Go to page 2">2</a></li>
+                                        <li class="pagination__item pagination__item--next"><a href="search-results-p2.html" class="pagination__link" aria-label="Go to the next page (Page 2)" rel="next">Next</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+	<!–– End of content ––>
+
+
+	<!–– Start of internal footer ––>
+
+	<footer class="footer" role="contentinfo">
+	    <div class="container">
+	        <div class="grid">
+	            <div class="grid__col col-12@m">
+	                <ul class="list list--bare">
+						<li><a href="/contact-us" class="footer__link footer__link--inline" target="_blank">Contact us</a></li>
+						<li><a href="/contact-us" class="footer__link footer__link--inline" target="_blank">Accessibility</a></li>
+	                </ul>
+	            </div>
+	        </div>
+	    </div>
+	</footer>
+
+	<!–– End of internal footer ––>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.ons.gov.uk/sdc/v1.5.0/scripts/bundle.min.js"></script>
+
+</body>
+</html>
