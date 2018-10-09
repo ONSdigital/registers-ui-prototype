@@ -77,8 +77,8 @@
             <nav class="nav nav--horizontal nav--light nav--main nav--h-m js-main-nav" aria-label="Main menu" id="main-nav">
                 <ul class="nav__list" aria-label="Navigation menu" role="menubar">
                     <li class="nav__item" role="menuitem" aria-current="page"><a href="home.html" class="nav__link">Home</a></li>
-                    <li class="nav__item" role="menuitem"><a href="search.html" class="nav__link">Search</a></li>
-					<li class="nav__item nav__item--active" role="menuitem"><a href="record-management.html" class="nav__link">Record management</a></li>
+                    <li class="nav__item nav__item--active" role="menuitem"><a href="search.html" class="nav__link">Search</a></li>
+					<li class="nav__item " role="menuitem"><a href="record-management.html" class="nav__link">Record management</a></li>
                     <li class="nav__item nav__item--secondary u-d-no--@s" role="menuitem"><a href="#1" class="nav__link print__hidden">My account</a></li>
                     <li class="nav__item  u-d-no--@s" role="menuitem"><a href="#1" class="nav__link print__hidden">Help</a></li>
                     <li class="nav__item u-d-no--@s" role="menuitem"><button class="btn btn--ghost print__hidden">Save and sign out</button>
@@ -91,22 +91,74 @@
 	<!–– End of internal header ––>
 
 
+
     <!–– Start of main content ––>
+
     <div class="container">
-        <div class="grid grid--gutterless">=
+        <div class="grid grid--gutterless">
             <div class="grid__col col-8@s">
                 <main role="main" id="main" class="page__main">
-                    <div class="group u-mb-l">
-                        <h1 class="jupiter">Search for a record to edit</h1>
-                        <form class="form" action="edit-record.html">
-                            <div class="field u-mb-m">
-                                <label class="label venus" for="text-input">Reference number</label>
-                                <input class="input input--text" type="text" id="text-input" />
-                            </div>
-                            <button class="btn u-mb-m">Search</button>
-                            <p class="mars u-mb-m">Or</p>
-                            <a href="#">Create a new record</a>
-                        </form>
+                    <div class="group u-mb-m">
+                        <h1 class="jupiter">Advanced search</h1>
+                            <form class="form" action="search-results.html">
+                                <div class="field u-mb-m">
+                                    <label class="label venus" for="text-input">Business name</label>
+                                    <input class="input input--text" type="text" id="text-input" />
+                                </div>
+                                <div class="field u-mb-m">
+                                    <label class="label venus" for="text-input">Trading as name</label>
+                                    <input class="input input--text" type="text" id="text-input" />
+                                </div>
+                                <div class="field u-mb-m">
+                                    <label class="label venus" for="text-input">Postcode</label>
+                                    <input class="input input--text input--narrow" type="text" id="text-input" />
+                                </div>
+                                <div class="field u-mb-m">
+                                    <div class="field field--checkbox field--multiplechoice">
+                                        <fieldset>
+                                            <legend class="field__legend mars">Unit type</legend>
+                                            <div class="field__item js-focusable-box">
+                                                <input class="input input--checkbox js-focusable" name="checkbox-answer" value="Enterprise Group" id="enterpriseGroup" type="checkbox">
+                                                <label class="label label--inline venus " for="enterpriseGroup">Enterprise Group</label>
+                                            </div>
+                                            <div class="field__item js-focusable-box">
+                                                <input class="input input--checkbox js-focusable" name="checkbox-answer" value="enterprise" id="enterprise" type="checkbox">
+                                                <label class="label label--inline venus " for="enterprise">Enterprise</label>
+                                            </div>
+                                            <div class="field__item js-focusable-box">
+                                                <input class="input input--checkbox js-focusable" name="checkbox-answer" value="reporting unit" id="reportingUnit" type="checkbox">
+                                                <label class="label label--inline venus " for="reportingUnit">Reporting Unit</label>
+                                            </div>
+                                            <div class="field__item js-focusable-box">
+                                                <input class="input input--checkbox js-focusable" name="checkbox-answer" value="local unit" id="localUnit" type="checkbox">
+                                                <label class="label label--inline venus " for="localUnit">Local Unit</label>
+                                            </div>
+                                            <div class="field__item js-focusable-box">
+                                                <input class="input input--checkbox js-focusable" name="checkbox-answer" value="legal unit" id="legalUnit" type="checkbox">
+                                                <label class="label label--inline venus " for="legalUnit">Legal Unit</label>
+                                            </div>
+                                            <div class="field__item js-focusable-box">
+                                                <input class="input input--checkbox js-focusable" name="checkbox-answer" value="paye" id="paye" type="checkbox">
+                                                <label class="label label--inline venus " for="paye">PAYE</label>
+                                            </div>
+                                            <div class="field__item js-focusable-box">
+                                                <input class="input input--checkbox js-focusable" name="checkbox-answer" value="vat" id="vat" type="checkbox">
+                                                <label class="label label--inline venus " for="vat">VAT</label>
+                                            </div>
+                                            <div class="field__item js-focusable-box">
+                                                <input class="input input--checkbox js-focusable" name="checkbox-answer" value="company number" id="companyNumber" type="checkbox">
+                                                <label class="label label--inline venus " for="companyNumber">Company Number</label>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                                <p class="mars">Or</p>
+                                <div class="field u-mb-m">
+                                    <label class="label venus" for="text-input">Reference number</label>
+                                    <input class="input input--text" type="text" id="text-input"/>
+                                </div>
+                                <button class="btn u-mb-s">Search</button>
+                            </form>
                     </div>
                 </main>
             </div>
@@ -116,7 +168,6 @@
 
 
 	<!–– Start of internal footer ––>
-
 	<footer class="footer" role="contentinfo">
 	    <div class="container">
 	        <div class="grid">
@@ -129,8 +180,8 @@
 	        </div>
 	    </div>
 	</footer>
-
 	<!–– End of internal footer ––>
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdn.ons.gov.uk/sdc/v1.5.0/scripts/bundle.min.js"></script>
