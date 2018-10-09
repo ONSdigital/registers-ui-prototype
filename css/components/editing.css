@@ -34,3 +34,28 @@
 	font-weight: 700;
 	margin-bottom: 0.2rem;
 }
+
+a.edit--link {
+  float: right;
+  margin-top: 2rem;
+}
+
+a.edit--link__icon:after {
+    content: "";
+    display: block;
+    background: url("../../img/edit-icon.svg") no-repeat;
+    width: 24px;
+    height: 24px;
+    float: right;
+    margin-left: 0.2rem;
+}
+
+a.edit--link__icon:hover:after {
+    content: "";
+    display: block;
+    background: url("../../img/edit-icon-hover.svg") no-repeat;
+    width: 24px;
+    height: 24px;
+    float: right;
+    margin-left: 0.2rem;
+}

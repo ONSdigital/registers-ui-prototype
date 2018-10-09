@@ -2,29 +2,34 @@
 
 #card {
   cursor: pointer;
+  margin-bottom: 2rem;
+  border: solid 1px #cccccc;
+  padding: 1rem;
+  text-decoration: none;
+  min-height: 11rem;
 }
 
-#card:hover a {
+a.card:link  {
+  text-decoration: none;
+}
+
+a.card:hover {
   color: #033E58;
   text-decoration: none;
 }
 
-.card__text-area {
-  border: solid 1px #cccccc;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  border-top: none;
-  min-height: 200px;
-  padding: 1rem;
+.card a:focus {
+  outline: solid 3px #FE781F;
 }
 
-.card__link {
+a .text {
+  color: #222222;
   text-decoration: none;
-  line-height: 1.0;
 }
 
-.card--text-margin-top {
-  margin-top: 0.75rem;
+.text a:hover {
+  color: #222222;
+  text-decoration: none !important;
 }
+
 
