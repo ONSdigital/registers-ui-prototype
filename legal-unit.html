@@ -95,7 +95,12 @@
     <div class="global__search">
         <div class="container">
             <div class="grid">
-                <form class="form" action="search-results.html">
+                <div class="grid__col col-3@m">
+                    <div class="field">
+                        <label class="label venus" for="text-input">Reference number</label>
+                        <input class="input input--text input--fullwidth" type="text" id="text-input" />
+                    </div>
+                </div>
                 <div class="grid__col col-5@m">
                     <div class="field">
                         <label class="label venus" for="text-input">Business name</label>
@@ -108,18 +113,11 @@
                         <input class="input input--text input--fullwidth" type="text" id="text-input" />
                     </div>
                 </div>
-                <div class="grid__col col-3@m">
-                    <div class="field">
-                        <label class="label venus" for="text-input">Reference number</label>
-                        <input class="input input--text input--fullwidth" type="text" id="text-input" />
-                    </div>
-                </div>
                 <div class="grid__col col-2@m">
                     <div class="field">
                         <button class="btn btn--custom">Search</button>
                     </div>
                 </div>
-                </form>
             </div>
         </div>
     </div>
@@ -206,7 +204,6 @@
 
                             <div id="tab">
                                 <h2 class="collator-title neptune">Unit links</h2>
-                                <p class="mars">There are <strong>3 live</strong> admin units within this Legal Unit</p>
                                 <div class="collapsible js-collapsible u-mb-l">
                                     <div class="collapsible__controls">
                                         <button class="btn btn--secondary btn--small js-collapsible-toggle-all u-wa--@xs" data-close-all-label="Hide all" data-open-all-label="Show all" aria-hidden="true" data-ga="click" data-ga-category="accordion" data-ga-action="Toggle all panels" data-ga-label="Show all">Show all</button>

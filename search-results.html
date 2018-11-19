@@ -95,6 +95,12 @@
     <div class="global__search">
         <div class="container">
             <div class="grid">
+                <div class="grid__col col-3@m">
+                    <div class="field">
+                        <label class="label venus" for="text-input">Reference number</label>
+                        <input class="input input--text input--fullwidth" type="text" id="text-input" />
+                    </div>
+                </div>
                 <div class="grid__col col-5@m">
                     <div class="field">
                         <label class="label venus" for="text-input">Business name</label>
@@ -104,12 +110,6 @@
                 <div class="grid__col col-2@m">
                     <div class="field">
                         <label class="label venus" for="text-input">Postcode</label>
-                        <input class="input input--text input--fullwidth" type="text" id="text-input" />
-                    </div>
-                </div>
-                <div class="grid__col col-3@m">
-                    <div class="field">
-                        <label class="label venus" for="text-input">Reference number</label>
                         <input class="input input--text input--fullwidth" type="text" id="text-input" />
                     </div>
                 </div>
@@ -131,7 +131,7 @@
                 <div class="grid__col col-3@m">
                     <p class="neptune">Filters</p>
                         <fieldset>
-                            <legend class="field__legend mars">Unit classification</legend>
+                            <legend class="field__legend mars">Business type</legend>
                                 <div class="field--filtering">
                                     <div class="filter__item">
                                         <input class="field__input input input--checkbox" name="checkbox-answer" value="enterpriseGroup" id="enterpriseGroup" type="checkbox">
@@ -169,7 +169,7 @@
                         </fieldset>
                         <br>
                         <fieldset>
-                            <legend class="field__legend mars">Status</legend>
+                            <legend class="field__legend mars">Business status</legend>
                                 <div class="field--filtering">
                                     <div class="filter__item">
                                         <input class="field__input input input--checkbox" name="checkbox-answer" value="live" id="live" type="checkbox">
@@ -377,6 +377,22 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdn.ons.gov.uk/sdc/v1.5.0/scripts/bundle.min.js"></script>
+<script>
+        function showMe (box) {
+        
+        var chboxs = document.getElementsByName("c1");
+        var vis = "none";
+        for(var i=0;i<chboxs.length;i++) { 
+            if(chboxs[i].checked){
+             vis = "block";
+                break;
+            }
+        }
+        document.getElementById(box).style.display = vis;
+    
+    
+    }
+</script>
 
 </body>
 </html>

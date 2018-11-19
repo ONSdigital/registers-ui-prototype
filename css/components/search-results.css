@@ -14,3 +14,7 @@
 .results__block a {
 	text-decoration: none;
 }
+
+.results__block a:hover {
+	text-decoration: underline;
+}
