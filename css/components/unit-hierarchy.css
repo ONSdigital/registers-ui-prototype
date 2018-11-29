@@ -39,3 +39,7 @@
 	padding-top: 1rem;
 	border-top: 1px solid #999999;
 }
+
+p.hierarchy {
+	margin-bottom: 0.5rem;
+}
